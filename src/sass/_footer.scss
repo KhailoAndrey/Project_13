@@ -1,6 +1,6 @@
 .footer {
   margin: 0 auto;
-  background-color: #001414;
+  background-color: $footer-bgn-color;
   padding: 25px 0;
   @include tablet {
     padding: 40px 0;
@@ -42,7 +42,7 @@
 .footer__logo-link {
   cursor: pointer;
   text-decoration: none;
-  color: #ffffff;
+  color: $logo-text-color;
 }
 .footer__block-links {
   display: flex;
@@ -82,7 +82,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
-  color: #ffffff;
+  color: $nav-menu-text-color;
 }
 // .footer__social {
 // }
@@ -107,7 +107,7 @@
   cursor: pointer;
   width: 24px;
   height: 24px;
-  background-color: #fff;
+  background-color: $white-color;
   border-radius: 16px;
 }
 // .footer__social-link {
@@ -127,7 +127,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: $white-color;
 }
 .footer__email-link {
   margin: 0;
@@ -139,7 +139,7 @@
   font-size: 16px;
   line-height: 19px;
   text-transform: capitalize;
-  color: #8d9289;
+  color: $contacts-text-color;
 }
 .footer__phone {
   margin: 0;
@@ -151,7 +151,7 @@
 .footer__phone-text {
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: $white-color;
 }
 .footer__phone-list {
   list-style: none;
@@ -172,5 +172,5 @@
   line-height: 19px;
   letter-spacing: 0.01em;
   text-transform: capitalize;
-  color: #8d9289;
+  color: $contacts-text-color;
 }
