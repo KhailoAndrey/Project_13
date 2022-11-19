@@ -3,7 +3,10 @@ padding-top: 120px;
 padding-bottom: 120px;   
 }
 .accessories__btn-list {
-
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 8px;
 }
 .accessories__btn{
 
