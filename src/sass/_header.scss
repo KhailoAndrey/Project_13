@@ -1,7 +1,7 @@
 .header {
     position: relative;
     display: flex;
-    background: #01383A;
+    background: $header-bgn-color;
     box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
 &__container {
     display: flex;
@@ -30,7 +30,7 @@
     font-size: 24px;
     line-height: 1.17;
     text-align: center;
-    color: #FFFFFF;
+    color: $logo-text-color;
     text-decoration: none;
     width: 115px;
 }
@@ -55,7 +55,7 @@
     height: 40px;
     left: 633px;
     top: 56px;
-    background: #86E543;
+    background: $btn-color;
     border-radius: 16px;
     text-decoration: none;
     // text-style
@@ -66,7 +66,8 @@
     line-height: 1.58;
     text-align: right;
     letter-spacing: -0.03em;
-    color: #000000;
+    color: $btn-shop-now-text-color;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
         box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
     }
@@ -89,6 +90,108 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
-    color: #FFFFFF;
+    color: $nav-menu-text-color;
 }
 }
+
+// Mobmenu
+
+.mob-menu {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    background-image: url(..//images/mob-menu/bgmob-menu-mob.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(0);
+    transition: opacity 250ms, visibility 250ms;
+    @include retina {
+    background-image: url(..//images/mob-menu/bgmob-menu-mob-2x.jpg)
+    }
+    @include tablet {
+    background-image: url(..//images/mob-menu/bgmob-menu-tab.jpg);
+        @include retina {
+            background-image: url(..//images/mob-menu/bgmob-menu-tab-2x.jpg)
+        }
+    }
+    @include desktop {
+      display: none;
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 64px;
+        @include tablet {
+            margin-top: 120px;
+        }
+    }
+    &__nav-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+    text-transform: uppercase;
+    color: $nav-menu-text-color;
+    @include tablet {
+        font-size: 32px;
+        line-height: 1.19;
+    }
+    }
+  }
+
+  .mob-wrapper {
+    background: $header-bgn-color;
+    box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
+    height: 104px;
+    @include tablet {
+        height: 136px;
+    }
+  }
+
+  .mob-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 320px;
+    height: 104px;
+    @include tablet {
+        width: 768px;
+        height: 136px;
+        padding-left: 40px;
+        padding-right: 40px;
+        align-content: baseline;
+    }
+  }
+
+  .mob__link-logo {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: center;
+    color: $logo-text-color;
+    text-decoration: none;
+    width: 115px;
+  }
+  .mob-menu__close {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  .is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
