@@ -4,12 +4,26 @@ padding-bottom: 120px;
 }
 .accessories__btn-list {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 189px;
     justify-content: center;
-    gap: 8px;
+    //gap: px;
 }
 .accessories__btn{
-
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.17;
+    //letter-spacing: 0.06em;
+    color: #86E543;
+    background-color: #01383A;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 12px;
+    padding: 16px 74px;
+    //transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        //background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .accessories__title {
