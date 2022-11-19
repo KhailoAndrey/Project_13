@@ -10,9 +10,10 @@
   margin: 0 auto;
   padding-right: 32px;
   padding-left: 16px;
-  max-width: 480px;
+  width: 320px;
+  //   max-width: 320px;
   @include tablet {
-    max-width: none;
+    // max-width: none;
     width: 768px;
     padding-right: 50px;
     padding-left: 40px;
