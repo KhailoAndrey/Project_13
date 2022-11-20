@@ -1,0 +1,229 @@
+.sale {
+    margin: 0 auto;
+    padding: 48px 0;
+   
+    background-image: 
+    url(../images/main-sale/bg-image/bg-mob@1x.png);
+
+    @include retina {
+        background-image: 
+        url(../images/main-sale/bg-image/bg-mob@2x.png);
+    }
+   
+
+    @include tablet {
+       padding: 120px 0;
+
+       background-image:
+       url(../images/main-sale/bg-image/bg-tab@1x.png);
+
+       @include retina {
+        background-image:
+        url(../images/main-sale/bg-image/bg-tab@2x.png); 
+
+    }
+}
+
+@include desktop {
+    background-image: 
+    url(../images/main-sale/bg-image/bg-desk@1x.png);
+
+    @include retina {
+        background-image:
+        url(../images/main-sale/bg-image/bg-desk@2x.png);
+    }
+}
+}
+
+.sale__container {
+    margin: 0 auto;
+    padding-left: 17px;
+    padding-right: 18px;
+    width: 320px;
+   
+
+    @include tablet {
+        width: 768px;
+        padding-left: 80px;
+        padding-right: 80px;
+      
+        
+    }
+
+    @include desktop {
+        width: 1280px;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+
+    }
+}
+
+.sale__list {
+margin: 0;
+padding: 0;
+
+// gap: 24px;
+justify-content: center;
+
+
+
+@include tablet {
+ 
+    margin: -19px;
+   display: flex;
+    flex-wrap: wrap;
+}
+
+@include desktop {
+   
+    margin: -10px;
+   
+}
+
+}
+
+.sale__item {
+    width: 100%;
+
+
+
+    @include tablet {
+        width: calc((100% - 4 * 19px) / 2);
+        margin: 19px;
+       
+
+    }
+
+    @include desktop {
+        width: calc((100% - 8 * 10px) / 4);
+        margin: 10px;
+    }
+
+    &:not(:last-child) {
+
+        @media screen and (max-width: 767px){
+            margin-bottom: 24px;
+        }
+    
+        @include tablet {
+            margin-bottom: 32px;
+        }
+    
+        @include desktop {
+            margin-bottom: 24px;
+        }
+       
+    }
+
+    
+}
+
+.sale__title {
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    font-weight: 600;
+    color: $nav-menu-text-color;
+    margin-bottom: 35px;
+    margin-left: 80px;
+
+    @include tablet {
+        font-size: 56px;
+        line-height: calc(66 / 56);
+        margin-bottom: 51px;
+        margin-left: 142px;
+    }
+
+    @include desktop {
+        margin-bottom: 43px;
+        margin-left: 142px;
+    }
+}
+
+.sale__link {
+    display: block;
+}
+
+.sale__thumb {
+    position: relative;
+    content: '';
+}
+
+.sale__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.sale__description {
+   padding: 0 16px 20px 8px;
+
+
+}
+
+.sale__text {
+    font-family: 'Roboto';
+    font-size: 22px;
+    line-height: calc(26 / 22);
+    font-weight: 600;
+    color: $btn-color;
+    margin-bottom: 8px;
+}
+
+.sale__price {
+    display: flex;
+    // gap: 80px;
+    // margin-left: auto;
+    align-items: center;
+    justify-content: space-between;
+ 
+
+   
+}
+
+.sale__oldprice {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: calc(14 / 14);
+    font-weight: 600;
+    color: $old-price-text-color;
+    // margin-right: 80px;
+    text-decoration: line-through;
+    
+ 
+    
+}
+
+.sale__newprice {
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: calc(20 / 20);
+    font-weight: 600;
+    color: $text-accent-color;
+   
+    
+}
+
+.sale__btn {
+    display: inline-flex;
+    cursor: pointer;
+    border: none;
+    padding: 16px 48px;
+    border-radius: 16px;
+    background-color: $white-color;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: $btn-text-color;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    box-shadow: none;
+   
+}
+.sale__btn:hover,
+.sale__btn:focus {
+    box-shadow: $btn-view-all-hover-shadow;
+
+}
