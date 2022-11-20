@@ -113,6 +113,10 @@ background-color: $page-bgn-color;
     box-sizing: 4px;
     border-color: $btn-border-color;
 }
+.accessories__overlay:hover {
+    box-sizing: 4px;
+    border-color: $btn-border-color;
+}
 
 .accessories__overlay-text{
     position: absolute;
