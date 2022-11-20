@@ -106,12 +106,12 @@ background-color: $page-bgn-color;
 
 .accessories__list {
     width: 100%;
-    margin: o auto;
-    margin-left: auto;
-    margin-right: auto;
+    //margin: o auto;
+    justify-content: center;
     display: flex;
-    //flex-wrap: wrap;
-    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    //flex-direction: column;
     gap: 20px;
     @include tablet {
         width: 100%;
@@ -119,7 +119,9 @@ background-color: $page-bgn-color;
         flex-direction: row;
         flex-basis: calc((100% - 38px) / 2);
     }
-    @include desktop {
+    @include desktop {   
+    margin-left: auto;
+    margin-right: auto;
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
@@ -130,6 +132,7 @@ background-color: $page-bgn-color;
 .accessories__pic {
     border-radius: 12px;
     box-shadow: #86E543;
+    width: 100%;
     //overflow: hidden;
 }
 
@@ -176,9 +179,7 @@ background-color: $page-bgn-color;
     }
 
 }
-.accessories__overlay-box {
-    
-}
+
 .accessories__overlay-text{  
     position: absolute;
     top: 0;
