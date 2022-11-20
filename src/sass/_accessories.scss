@@ -102,6 +102,11 @@ background-color: $page-bgn-color;
     margin-bottom: 11px;
 }
 
+.accessories__prices {
+    display: flex;
+    gap: 80px;
+}
+
 .accessories__old-price {
     font-weight: 500;
     font-size: 14px;
