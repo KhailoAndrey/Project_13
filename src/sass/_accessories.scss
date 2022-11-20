@@ -94,9 +94,9 @@ background-color: $page-bgn-color;
 }
 
 .accessories__pic {
-    //border-radius: 12px;
-    //box-shadow: #86E543;
-    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: #86E543;
+    //overflow: hidden;
 }
 .accessories__pic {
     //border-radius: 12px;
@@ -114,7 +114,7 @@ background-color: $page-bgn-color;
 }
 .accessories__overlay {
     position: relative;
-    //overflow: hidden;
+    overflow: hidden;
     border-radius: 12px;
     box-shadow: #86E543;
 }
