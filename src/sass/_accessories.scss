@@ -63,7 +63,7 @@ background-color: $page-bgn-color;
 }
 
 .accessories__title {
-    position: relative;
+    //position: relative;
     @media screen and (min-width: 768px) {
     font-size: 56px; 
     padding-bottom: 51px;   
@@ -81,7 +81,8 @@ background-color: $page-bgn-color;
     margin-bottom: 0;
     font-style: 24px;
     line-height: 1.17;
-    margin-left: auto;margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     color: $nav-menu-text-color;
     text-align: left;
     //padding-top: 0; 
@@ -91,7 +92,6 @@ background-color: $page-bgn-color;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-  
 }
 
 .accessories__pic {
