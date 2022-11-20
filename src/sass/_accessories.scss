@@ -1,7 +1,7 @@
 .accessories {
 padding-top: 120px;
 padding-bottom: 120px; 
-background-color: #01383A;  
+background-color: $page-bgn-color;  
 }
 .accessories__btn-list {
     display: flex;
@@ -15,10 +15,10 @@ background-color: #01383A;
     font-size: 16px;
     line-height: 1.17;
     //letter-spacing: 0.06em;
-    color:#86E543;
-    background-color: #01383A;
+    color: $text-accent-color;
+    background-color: $page-bgn-color;
     cursor: pointer;
-    border-color: #86E543;
+    border-color: $btn-border-color;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -29,8 +29,8 @@ background-color: #01383A;
 }
 .accessories__btn:hover,
 .accessories__btn:focus {
-    color: #01383A;
-    background-color: #86E543;
+    color: $btn-text-color;
+    background-color: $btn-color;
     border: 4px;
     //box-shadow: 0px 4px 4px 0px rgba(134, 229, 67, 0.2);
 }
@@ -40,10 +40,10 @@ background-color: #01383A;
 }
 
 .accessories__title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 56px;
     line-height: 1.17;
-    color: #FFFFFF;
+    color: $nav-menu-text-color;
     margin-bottom: 51px;
     text-align: left;
     padding-top: 0; 
@@ -55,34 +55,65 @@ background-color: #01383A;
     gap: 20px;
 }
 
-.accessories__picture {
+.accessories__link:hover,
+.accessories__link:focus {
+    display: block;
 
 }
-
-.accessories__list {
-
+.accessories__link:hover .accessories__overlay {
+    transform: translateY(0);
 }
-
 .accessories__overlay {
-
+    position: relative;
+    overflow: hidden;
 }
 
 .accessories__overlay-text{
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    height: 100%;
+    color: $white-color;
+    background-color: #01383A;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 52px;
+    transform: translateY(100%);
+    //transition: transform 250ms linear;
 }
 
 .accessories__block{
-
+    padding-top: 8px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .accessories__name{
-
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1,17;
+    text-align: left;
+    color: $text-accent-color;
+    margin-bottom: 11px;
 }
 
 .accessories__old-price {
-
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    text-align: left;
+    color: $old-price-text-color;
 }
 
 .accessories__price{
-    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+    color: $text-accent-color;
 }
