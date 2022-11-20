@@ -90,8 +90,12 @@ background-color: $page-bgn-color;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    border-radius: 12px;
+    
     box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+.accessories__picture {
+    border-radius: 12px;
+    border: #86E543;
 }
 
 .accessories__link:hover,
