@@ -6,8 +6,9 @@ padding-bottom: 120px;
     display: flex;
     margin-bottom: 189px;
     justify-content: center;
-    gap: 10 px;
+    gap: 10px;
 }
+
 .accessories__btn{
     font-weight: 700;
     font-size: 16px;
@@ -29,12 +30,11 @@ padding-bottom: 120px;
 .accessories__btn:focus {
     color: #01383A;
     background-color: #86E543;
-
-    
-
+    border: none;
 }
+
 .accessories__btn-list:not(:last-child) {
-    margin-right: px;
+    margin-right: 10px;
 }
 
 .accessories__title {
