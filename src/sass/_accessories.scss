@@ -100,6 +100,10 @@ background-color: $page-bgn-color;
     //overflow: hidden;
 }
 
+.accessories__pic:hover {
+    box-sizing: 4px;
+    border-color: $btn-border-color;
+}
 
 .accessories__link:hover,
 .accessories__link:focus {
@@ -110,10 +114,6 @@ background-color: $page-bgn-color;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    box-sizing: 4px;
-    border-color: $btn-border-color;
-}
-.accessories__overlay:hover {
     box-sizing: 4px;
     border-color: $btn-border-color;
 }
@@ -136,7 +136,6 @@ background-color: $page-bgn-color;
 }
 .accessories__picture:hover .accessories__overlay-text {
     transform: translateY(0);
-    box-shadow: #86E543;
     border-radius: 12px;
     box-sizing: 4px;
     border-color: $btn-border-color;
