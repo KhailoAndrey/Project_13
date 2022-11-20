@@ -44,6 +44,7 @@ background-color: $page-bgn-color;
     margin-right: auto;
     margin-left: auto;
     border-radius: 16px;
+    box-sizing: 4px;
     padding: 16px 74px;
     //text-decoration: none;
     gap: 10px;
@@ -109,7 +110,7 @@ background-color: $page-bgn-color;
     display: block;
 
 }
-.accessories__link:hover .accessories__overlay {
+.accessories__link:hover  {
     transform: translateY(0);
 }
 .accessories__overlay {
@@ -136,7 +137,12 @@ background-color: $page-bgn-color;
     transform: translateY(100%);
     //transition: transform 250ms linear;
 }
+.accessories__overlay-text:hover {
+    transform: translateY(0);
+    box-shadow: #86E543;
 
+
+}
 .accessories__block{
     padding-top: 8px;
     border-left: 1px solid #eeeeee;
