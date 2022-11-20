@@ -128,8 +128,6 @@ background-color: $page-bgn-color;
     height: 100%;
     color: $white-color;
     background-color: #01383A;
-    box-sizing: 4px;
-    border-color: $btn-border-color;
     padding: 16px;
     text-align: left;
     vertical-align: top;
@@ -138,9 +136,19 @@ background-color: $page-bgn-color;
 }
 .accessories__picture:hover .accessories__overlay-text {
     transform: translateY(0);
-    border-radius: 12px;
-    box-sizing: 4px;
-    border-color: $btn-border-color;
+    outline: 4px solid #86E543;
+}
+
+.accessories__picture {
+    @include mobile {
+        width: 100%;
+    }
+@include tablet {
+        width: calc((100% - 38px) / 2);
+    } 
+@include desktop {
+        width: calc((100% - 60px) / 4);
+    }
 }
 
 .accessories__block{
