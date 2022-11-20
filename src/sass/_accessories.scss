@@ -147,6 +147,7 @@ background-color: $page-bgn-color;
 .accessories__old-price {
     font-weight: 500;
     font-size: 14px;
+    text-decoration: line-through;
     line-height: 1;
     text-align: left;
     color: $old-price-text-color;
