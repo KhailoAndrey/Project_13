@@ -99,11 +99,7 @@ background-color: $page-bgn-color;
     box-shadow: #86E543;
     //overflow: hidden;
 }
-.accessories__pic {
-    //border-radius: 12px;
-    //box-shadow: #86E543;
-    
-}
+
 
 .accessories__link:hover,
 .accessories__link:focus {
@@ -113,6 +109,9 @@ background-color: $page-bgn-color;
 .accessories__overlay {
     position: relative;
     overflow: hidden;
+    border-radius: 12px;
+    box-sizing: 4px;
+    border-color: $btn-border-color;
 }
 
 .accessories__overlay-text{
