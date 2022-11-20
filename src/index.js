@@ -3,7 +3,7 @@
 new Swiper('.banner__slider', {
   loop: true,
   initialSlide: 0,
-
+  slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

@@ -1,6 +1,20 @@
-.banner {
-  width: 480px;
+.banner-container {
+  // display: flex;
+  flex: 1 1 auto;
+  margin: 0 auto;
   min-width: 0;
+
+  background-image: url(../images/banner-bg-desk.jpg);
+  @include retina {
+    background-image: url(../images/banner-bg-desk-2x.jpg);
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner {
   padding-bottom: 88px;
   padding-top: 0;
   margin: 0 auto;
@@ -14,15 +28,6 @@
   @include desktop {
     width: 1280px;
   }
-
-  background-image: url(../images/banner-bg-desk.jpg);
-  @include retina {
-    background-image: url(../images/banner-bg-desk-2x.jpg);
-  }
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
   &__title {
     position: absolute;
@@ -52,12 +57,69 @@
     border-radius: 30px;
   }
 
+  &__slider-image {
+    position: relative;
+    display: inline-block;
+  }
+
   &__slider-image img {
     max-height: 100%;
   }
+
+  &__slider-text {
+    display: inline;
+    position: absolute;
+    max-width: 300px;
+    left: 24px;
+    bottom: 37px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    background-clip: text;
+    color: transparent;
+
+    @include tablet {
+      font-size: 56px;
+      line-height: 76px;
+      max-width: 590px;
+    }
+  }
+
+  .pagination {
+    height: 50px;
+    position: relative;
+  }
 }
 
-.pagination {
-  height: 50px;
-  position: relative;
+.text1 {
+  background-image: $banner-one-place-gradient;
+  @include desktop {
+    left: 345px;
+    bottom: 49px;
+  }
+
+  @include tablet {
+    left: 41px;
+    bottom: 14px;
+  }
+}
+
+.text2 {
+  background-image: $banner-products-gradient;
+  left: 49px;
+  bottom: 49px;
+}
+
+.text3 {
+  background-image: $banner-price-gradient;
+  left: 58px;
+  bottom: 55px;
+
+  @include tablet {
+    max-width: 450px;
+  }
+}
+
+.text2 > span {
+  text-transform: uppercase;
 }
