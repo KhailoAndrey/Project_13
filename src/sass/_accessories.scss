@@ -105,9 +105,26 @@ background-color: $page-bgn-color;
 }
 
 .accessories__list {
+    width: 100%;
+    margin: o auto;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
+    @include tablet {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-basis: calc((100% - 38px) / 2);
+    }
+    @include desktop {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 60px) / 4);
+    }
 }
 
 .accessories__pic {
@@ -126,6 +143,21 @@ background-color: $page-bgn-color;
     } 
 }
 
+.accessories__link{
+    display: flex;
+    flex-direction: column;
+    @include mobile {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include tablet {
+        height: 100%;
+    }
+    @include desktop {
+        height: 100%;
+    }
+}
 
 .accessories__link:hover,
 .accessories__link:focus {
@@ -136,24 +168,35 @@ background-color: $page-bgn-color;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-}
+    width: 100%;
+    height: auto;
+    display: block;
+    @include desktop {
+        height: auto;
+    }
 
-.accessories__overlay-text{
+}
+.accessories__overlay-box {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: #01383A; 
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accessories__overlay-text{  
     font-weight: 400;
     font-size: 14px;
     line-height: 1.17;
-    height: 100%;
-    color: $white-color;
-    background-color: #01383A;
+    margin: 0;
+    color: $white-color;   
     padding: 16px;
     border: 1px solid rgba(134, 229, 67, 1);
     text-align: left;
     vertical-align: top;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .accessories__picture:hover .accessories__overlay-text {
     transform: translateY(0);
@@ -174,7 +217,8 @@ background-color: $page-bgn-color;
 .accessories__block{
     padding-top: 8px;
     max-width: 285px;
-    max-height: px;
+    max-height: 88px;
+
 }
 
 .accessories__name{
