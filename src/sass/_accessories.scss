@@ -171,13 +171,9 @@ background-color: $page-bgn-color;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    transform: translate(100%);
     //width: 100%;
     height: auto;
     display: block;
-    @include desktop {
-        height: auto;
-    }
 
 }
 
