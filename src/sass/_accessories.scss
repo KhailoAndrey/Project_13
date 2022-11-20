@@ -20,7 +20,9 @@ background-color: $page-bgn-color;
 }
 
 .accessories__btn-list {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 189px;
     justify-content: center;
     align-items: center;
@@ -34,7 +36,7 @@ background-color: $page-bgn-color;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 72px;
-        width: 575px;
+        width: 687px;
         flex-wrap: nowrap;
         justify-content: space-between;
         gap: 53px;
