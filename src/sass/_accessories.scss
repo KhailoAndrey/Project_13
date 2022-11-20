@@ -110,12 +110,9 @@ background-color: $page-bgn-color;
     display: block;
 
 }
-.accessories__link:hover  {
-    transform: translateY(0);
-}
 .accessories__overlay {
     position: relative;
-    //overflow: hidden;
+    overflow: hidden;
     border-radius: 12px;
     box-shadow: #86E543;
 }
@@ -137,12 +134,12 @@ background-color: $page-bgn-color;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.accessories__overlay-text:hover {
+.accessories__picture:hover .accessories__overlay-text {
     transform: translateY(0);
     box-shadow: #86E543;
-
-
+    border-radius: 12px;
 }
+
 .accessories__block{
     padding-top: 8px;
     max-width: 285px;
