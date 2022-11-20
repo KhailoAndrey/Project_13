@@ -29,8 +29,8 @@ background-color: $page-bgn-color;
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
-      }
-      @include tablet {
+    }
+    @include tablet {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 72px;
@@ -38,7 +38,7 @@ background-color: $page-bgn-color;
         flex-wrap: nowrap;
         justify-content: space-between;
         gap: 53px;
-      }
+    }
 }
 
 .accessories__btn{
@@ -54,7 +54,7 @@ background-color: $page-bgn-color;
     height: 51px;
     border-color: $btn-border-color;
     text-align: center;
-    //align-items: center;
+    align-items: center;
     margin-right: auto;
     margin-left: auto;
     border-radius: 16px;
