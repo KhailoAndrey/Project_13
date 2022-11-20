@@ -191,14 +191,15 @@ background-color: $page-bgn-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.17;
-    margin: 0;
+    //margin: 0;
     color: $white-color;   
-    padding: 16px;
+    padding: 16px 16px;
     border: 1px solid rgba(134, 229, 67, 1);
     text-align: left;
     vertical-align: top;
-    
 }
+    
+
 .accessories__picture:hover .accessories__overlay-text {
     transform: translateY(0);
 }
