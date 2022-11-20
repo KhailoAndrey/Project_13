@@ -115,6 +115,8 @@ background-color: $page-bgn-color;
     overflow: hidden;
     border-radius: 12px;
     box-shadow: #86E543;
+    box-sizing: 4px;
+    border-color: $btn-border-color
 }
 
 .accessories__overlay-text{
