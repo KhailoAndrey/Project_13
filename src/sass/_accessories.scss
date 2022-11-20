@@ -129,6 +129,7 @@ background-color: $page-bgn-color;
     color: $white-color;
     background-color: #01383A;
     padding: 16px;
+    outline: 4px solid #86E543;
     text-align: left;
     vertical-align: top;
     transform: translateY(100%);
@@ -136,7 +137,7 @@ background-color: $page-bgn-color;
 }
 .accessories__picture:hover .accessories__overlay-text {
     transform: translateY(0);
-    outline: 4px solid #86E543;
+    //outline: 4px solid #86E543;
 }
 
 .accessories__picture {
