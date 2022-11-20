@@ -100,7 +100,7 @@
     z-index: 3;
     position: fixed;
     top: 0;
-    background-image: url(..//images/mob-menu/bgmob-menu-mob.jpg);
+    background-image: url(../images/mob-menu/bgmob-menu-mob.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100vw;
@@ -108,12 +108,12 @@
     transform: translateY(0);
     transition: opacity 250ms, visibility 250ms;
     @include retina {
-    background-image: url(..//images/mob-menu/bgmob-menu-mob-2x.jpg)
+    background-image: url(../images/mob-menu/bgmob-menu-mob-2x.jpg)
     }
     @include tablet {
-    background-image: url(..//images/mob-menu/bgmob-menu-tab.jpg);
+    background-image: url(../images/mob-menu/bgmob-menu-tab.jpg);
         @include retina {
-            background-image: url(..//images/mob-menu/bgmob-menu-tab-2x.jpg)
+            background-image: url(../images/mob-menu/bgmob-menu-tab-2x.jpg)
         }
     }
     @include desktop {
