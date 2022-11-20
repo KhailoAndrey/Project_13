@@ -92,9 +92,14 @@ background-color: $page-bgn-color;
     gap: 20px;
   
 }
-.accessories__picture {
+
+.accessories__pic {
     border-radius: 12px;
     box-shadow: #86E543;
+}
+.accessories__picture {
+    //border-radius: 12px;
+    //box-shadow: #86E543;
 }
 
 .accessories__link:hover,
