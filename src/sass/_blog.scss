@@ -1,0 +1,248 @@
+.container {
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 15px;
+   @include mobile {
+      width: 480px;
+   }
+   @include tablet {
+      width: 768px;
+      padding: 0 40px;
+   }
+   @include desktop {
+      width: 1280px;
+   }
+}
+ul,
+ol {
+   margin: 0;
+   padding-left: 0;
+   list-style: none;
+}
+
+.blog {
+   max-width: 1280px;
+   min-height: 320px;
+   margin: 0 auto;
+
+   background-image: url("../images/blog/blog-bg-mobile-1x.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+   padding-top: 40px;
+   padding-bottom: 48px;
+
+   @include retina {
+      background-image: url("../images/blog/blog-bg-mobile-2x.jpg");
+   }
+   @include tablet {
+      background-image: url("../images/blog/blog-bg-tablet-1x.jpg");
+      padding-top: 120px;
+      padding-bottom: 120px;
+      @include retina {
+         background-image: url("../images/blog/blog-bg-tablet-2x.jpg");
+      }
+   }
+   @include desktop {
+      min-height: 600px;
+      background-image: url("../images/blog/blog-bg-destop-1x.jpg");
+      @include retina {
+         background-image: url("../images/blog/blog-bg-destop-2x.jpg");
+      }
+   }
+}
+
+// -------------------------------
+
+// ----------------------------------------
+.page__container {
+}
+.container {
+}
+.blog__main-title {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 1.17;
+
+   color: #ffffff;
+
+   margin-bottom: 31px;
+
+   @include tablet {
+      font-size: 56px;
+      margin-bottom: 67px;
+      margin-left: 60px;
+   }
+   @include desktop {
+      margin-bottom: 75px;
+      margin-left: 100px;
+   }
+}
+
+.blog__items {
+}
+.blog__item {
+   &:not(:last-child) {
+      padding-bottom: 24px;
+   }
+   @include tablet {
+      &:not(:last-child) {
+         padding-bottom: 40px;
+      }
+   }
+   @include desktop {
+      display: flex;
+      gap: 121px;
+   }
+}
+
+.blog__wrapper {
+   @include desktop {
+   }
+}
+.blog__image--up {
+   display: none;
+   @include desktop {
+      display: block;
+      box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+      & img {
+         border-radius: 12px;
+         width: 100%;
+      }
+   }
+}
+.blog__image {
+   display: block;
+   flex-shrink: 0;
+   // max-width: 100%;
+   // height: 100%;
+   // width: 100%;
+   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+   & img {
+      width: 100%;
+   }
+
+   @media screen and (max-width: 766px) {
+      margin-left: -15px;
+      margin-right: -15px;
+   }
+   @include desktop {
+      display: none;
+   }
+   @include tablet {
+      & img {
+         border-radius: 12px;
+      }
+   }
+   margin-bottom: 8px;
+}
+
+.blog__body {
+   @include tablet {
+      display: flex;
+      gap: 40px;
+   }
+   @include desktop {
+      display: block;
+   }
+}
+.blog__title {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 28px;
+
+   color: #ffffff;
+
+   margin-bottom: 16px;
+   @include tablet {
+      width: 688px;
+      font-size: 56px;
+      line-height: 1;
+   }
+   @include desktop {
+      margin-bottom: 52px;
+   }
+}
+.blog__info {
+   margin-bottom: 16px;
+   @include tablet {
+      margin-top: auto;
+      width: 248px;
+   }
+   @include desktop {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 24px;
+   }
+}
+.blog__category {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 100%;
+   color: #ffffff;
+
+   margin-bottom: 8px;
+   @include tablet {
+      font-size: 24px;
+      margin-bottom: 32px;
+   }
+   @include desktop {
+      margin-bottom: 0px;
+   }
+}
+.blog__year {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 100%;
+   color: #8d9289;
+   @include tablet {
+      font-size: 24px;
+   }
+}
+.blog__text--wrap {
+   @include tablet {
+      width: 688px;
+   }
+}
+.blog__text {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.185;
+   color: #ffffff;
+
+   margin-bottom: 8px;
+   @include tablet {
+      width: 688px;
+      font-size: 24px;
+      line-height: 1.16;
+   }
+}
+.text {
+}
+.blog__link {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1;
+   color: #86e543;
+
+   display: block;
+   text-align: right;
+   @include tablet {
+      font-size: 24px;
+      line-height: 1;
+   }
+}
