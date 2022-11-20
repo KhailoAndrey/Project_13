@@ -22,7 +22,7 @@ background-color: $page-bgn-color;
 .accessories__btn-list {
     display: flex;
     margin-bottom: 189px;
-    justify-content: center;
+    //justify-content: center;
     gap: 20px;
 }
 
@@ -36,6 +36,7 @@ background-color: $page-bgn-color;
     cursor: pointer;
     width: 168px;
     height: 51px;
+    justify-content: center;
     border-color: $btn-border-color;
     text-align: right;
     align-items: center;
