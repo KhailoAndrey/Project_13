@@ -1,7 +1,7 @@
 .contact-us {
   background: $page-bgn-color;
   background-image: url('../images/contacts/bg_mobile_1x.jpg');
-  padding-top: 40px;
+  padding-top: 40px+104px;
   padding-bottom: 48px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
   @include tablet {
     background-image: url('../images/contacts/bg_tablet_1x.jpg');
-    padding-top: 120px;
+    padding-top: 120px+136px;
     padding-bottom: 120px;
     @include retina {
       background-image: url('../images/contacts/bg_tablet_2x.jpg');
