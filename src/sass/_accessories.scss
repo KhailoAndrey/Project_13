@@ -24,7 +24,7 @@ background-color: $page-bgn-color;
     //height: 94px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 189px;
+    //margin-bottom: 189px;
     justify-content: center;
     align-items: center;
     gap: 44px;
@@ -32,9 +32,9 @@ background-color: $page-bgn-color;
         //display: flex;
         //flex-wrap: wrap;
         gap: 24px;
-        width: calc((100% - 72px) / 2);  
-        //flex-direction: row;
-        //flex-basis: calc((100% - 72px) / 2)
+        //width: calc((100% - 72px) / 2);  
+        flex-direction: row;
+        flex-basis: calc((100% - 72px) / 2)
     }
     @include tablet {
         margin-left: auto;
