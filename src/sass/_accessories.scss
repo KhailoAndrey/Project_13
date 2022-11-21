@@ -242,7 +242,14 @@ background-color: $page-bgn-color;
     padding-top: 8px;
     max-width: 285px;
     max-height: 88px;
-    margin-bottom: 44px;
+    margin-bottom: 36px;
+    @include tablet {
+        padding-top: 8px;
+        margin-bottom: 44px;  
+    }
+    @include desktop {
+        margin-bottom: 44px;    
+    }
 
 }
 
@@ -260,7 +267,7 @@ background-color: $page-bgn-color;
 .accessories__prices {
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 116px;
 }
 
 .accessories__old-price {
