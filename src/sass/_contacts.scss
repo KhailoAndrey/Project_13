@@ -100,23 +100,23 @@
   @media screen and (max-width: 767px) {
     width: 100%;
     left: 0;
-    background-image: url('../images/top_line_mob.svg'),
-      url('../images/bottom_line_mob.svg');
+    background-image: url('../images/contacts/top_line_mob.svg'),
+      url('../images/contacts/bottom_line_mob.svg');
   }
   @media screen and (min-width: 768px) {
     height: 72px;
     width: 111%;
     left: -5.5%;
-    background-image: url('../images/top_line_tablet.svg'),
-      url('../images/bottom_line_tablet.svg');
+    background-image: url('../images/contacts/top_line_tablet.svg'),
+      url('../images/contacts/bottom_line_tablet.svg');
     background-position-y: 50%, 200%;
   }
   @media screen and (min-width: 1280px) {
     height: 59px;
     width: 107%;
     left: -3.5%;
-    background-image: url('../images/top_line_desk.svg'),
-      url('../images/bottom_line_desk.svg');
+    background-image: url('../images/contacts/top_line_desk.svg'),
+      url('../images/contacts/bottom_line_desk.svg');
     background-position-y: 45%, -30%;
   }
   background-repeat: no-repeat, no-repeat;
