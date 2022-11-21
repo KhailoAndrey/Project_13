@@ -1,7 +1,15 @@
 .accessories {
-padding-top: 120px;
-padding-bottom: 226px; 
-background-color: $page-bgn-color;  
+padding-top: 144px;
+padding-bottom: 48px; 
+background-color: $page-bgn-color;
+@include tablet {
+    padding-top: 256px;
+    padding-bottom: 120px;   
+}  
+@include desktop {
+    padding-top: 256px;
+padding-bottom: 120px; 
+}
 }
 
 .container-accessories {
