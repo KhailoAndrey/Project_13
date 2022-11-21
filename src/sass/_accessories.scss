@@ -88,18 +88,6 @@ background-color: $page-bgn-color;
 
 .accessories__title {
     position: relative;
-    @media screen and (min-width: 768px) {
-    font-size: 56px; 
-    padding-bottom: 51px;   
-    }
-    @media screen and (min-width: 1280px) {
-        padding-bottom: 51px;
-    }
-    @media screen and (max-width: 767px) {
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-bottom: 27px;
-    }
     font-weight: 500;
     margin-top: 0;
     padding-left: 142px;
@@ -111,6 +99,20 @@ background-color: $page-bgn-color;
     color: $nav-menu-text-color;
     text-align: left;
     //padding-top: 0; 
+    @include tablet {
+    font-size: 56px; 
+    padding-bottom: 51px;   
+    }
+    @include desktop {
+        padding-bottom: 51px;
+        font-size: 56px; 
+    }
+    @media screen and (max-width: 767px) {
+        padding-left: 16px;
+        //padding-right: 16px;
+        padding-bottom: 27px;
+    }
+    
 }
 
 .accessories__list {
