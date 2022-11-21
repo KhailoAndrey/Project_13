@@ -267,7 +267,7 @@ background-color: $page-bgn-color;
 .accessories__prices {
     display: flex;
     align-items: center;
-    gap: 80px;
+    //gap: 80px;
     width: 285px;
 }
 
@@ -286,6 +286,6 @@ background-color: $page-bgn-color;
     width: 100%;
     font-size: 20px;
     line-height: 1;
-    text-align: left;
+    text-align: right;
     color: $text-accent-color;
 }
