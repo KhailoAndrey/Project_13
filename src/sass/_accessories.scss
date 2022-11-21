@@ -132,7 +132,7 @@ background-color: $page-bgn-color;
     //margin: o auto;
     justify-content: center;
     display: flex;
-    //align-items: left;
+    align-items: center;
     flex-wrap: wrap;
     //flex-direction: column;
     gap: 20px;
@@ -193,6 +193,7 @@ background-color: $page-bgn-color;
     width: 100%;
     height: auto;
     display: block;
+    text-align: left;
     @include desktop {
         height: auto;
     }
