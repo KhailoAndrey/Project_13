@@ -260,7 +260,6 @@ background-color: $page-bgn-color;
     display: flex;
     align-items: center;
     gap: 80px;
-    padding-bottom: 44px;
 }
 
 .accessories__old-price {
@@ -270,6 +269,7 @@ background-color: $page-bgn-color;
     line-height: 1;
     text-align: left;
     color: $old-price-text-color;
+    padding-bottom: 44px;
 }
 
 .accessories__price{
@@ -278,4 +278,5 @@ background-color: $page-bgn-color;
     line-height: 1;
     text-align: left;
     color: $text-accent-color;
+    padding-bottom: 44px;
 }
