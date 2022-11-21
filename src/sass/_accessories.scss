@@ -45,6 +45,9 @@ background-color: $page-bgn-color;
         justify-content: space-between;
         gap: 53px;
     }
+    @include desktop {
+        width: 801px;
+    }
 }
 /*.accessories__btn-list {
     @include mobile {
