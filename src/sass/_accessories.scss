@@ -132,7 +132,7 @@ background-color: $page-bgn-color;
     //margin: o auto;
     justify-content: center;
     display: flex;
-    align-items: center;
+    //align-items: center;
     flex-wrap: wrap;
     //flex-direction: column;
     gap: 20px;
@@ -217,7 +217,6 @@ background-color: $page-bgn-color;
     padding: 16px 16px;
     border: 1px solid rgba(134, 229, 67, 1);
     text-align: left;
-    align-items: left;
     vertical-align: top;
 }
     
