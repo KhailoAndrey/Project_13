@@ -43,7 +43,11 @@ background-color: $page-bgn-color;
         gap: 53px;
     }
 }
-
+/*.accessories__btn-list {
+    @include mobile {
+        width: calc((100% - 86px) / 2);
+    } 
+}*/
 .accessories__btn{
     font-weight: 700;
     font-size: 16px;
@@ -151,11 +155,7 @@ background-color: $page-bgn-color;
     box-sizing: 4px;
     border-color: $btn-border-color;
 }
-.accessories__btn-li {
-    @include mobile {
-        width: calc((100% - 86px) / 2);
-    } 
-}
+
 
 .accessories__link{
     display: flex;
