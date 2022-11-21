@@ -29,34 +29,36 @@
 
 .contact-us__container {
   width: 100%;
-  padding-left: 16px;
+  padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 
-  @include mobile {
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
 
-  @include tablet {
+  @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  @include desktop {
+  @media screen and (min-width: 1280px) {
     width: 1280px;
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
-
-.contact-us__container-wrap {
-  @include tablet {
-    padding-left: 40px;
-    padding-right: 40px;
+.contact-us__wrap {
+  @media screen and (min-width: 481px) and (max-width: 1279px) {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
   }
-  img {
-    border-radius: 12px;
+}
+.contacts-us__wrap-contact {
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
   }
 }
 
@@ -89,13 +91,14 @@
 }
 
 .contact-us__title::after {
+  width: 100%;
   height: 31px;
   bottom: 0;
   position: absolute;
   content: '';
   @media screen and (max-width: 767px) {
-    width: 100%;
-    left: 0;
+    width: 107%;
+    left: -3%;
     background-image: url('../images/contacts/top_line_mob.svg'),
       url('../images/contacts/bottom_line_mob.svg');
   }
@@ -122,10 +125,28 @@
 }
 
 .contact-us__img {
-  // margin-top: 24px;
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     margin-bottom: 16px;
     width: 100%;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  @include tablet {
+    margin-bottom: 16px;
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+  }
+  @include desktop {
+    width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
   }
 }
 
@@ -151,19 +172,11 @@
   font-size: 16px;
   line-height: 1.19;
   color: $white-color;
-  // margin-bottom: 8px;
+  margin-bottom: 8px;
   @include tablet {
     font-size: 24px;
     line-height: 1.17;
-  }
-}
-
-.wrap {
-  @include desktop {
-    display: flex;
-    gap: 122px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-bottom: 0px;
   }
 }
 
@@ -175,7 +188,6 @@
   line-height: 1.19;
   color: $white-color;
   text-decoration: none;
-  margin-top: 20px;
   margin-bottom: 24px;
   @include tablet {
     font-size: 24px;
@@ -186,6 +198,7 @@
 
 .contact-us__email--dark {
   color: $contacts-text-color;
+  margin-top: 0px;
 }
 
 .contact-us__subtitle-telephone {
@@ -202,7 +215,9 @@
 }
 
 .contact-us__telephone {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .contact-us__telephone-link {
@@ -220,19 +235,6 @@
   }
 }
 
-.contact-us__form-wrap {
-  padding-left: 16px;
-  padding-right: 15px;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-left: 90px;
-    padding-right: 88px;
-  }
-  @include desktop {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
 .contact-us__modal-title {
   font-family: 'Roboto';
   font-weight: 500;
@@ -240,6 +242,7 @@
   line-height: 1.17;
   color: $text-accent-color;
   margin-bottom: 16px;
+  margin-top: 24px;
   @include tablet {
     margin-top: 40px;
     margin-bottom: 48px;
@@ -254,8 +257,14 @@
 .contact-us__form {
   display: flex;
   flex-direction: column;
+  @include tablet {
+    padding-left: 49px;
+    padding-right: 48px;
+  }
   @include desktop {
     width: 591px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
