@@ -20,7 +20,7 @@ background-color: $page-bgn-color;
 }
 
 .accessories__btn-list {
-    width: 100%;
+    //width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 189px;
@@ -31,7 +31,7 @@ background-color: $page-bgn-color;
         //display: flex;
         //flex-wrap: wrap;
         gap: 24px;
-        //width: calc((100% - 72px) / 2);  
+        width: calc((100% - 72px) / 2);  
         //flex-direction: row;
         //flex-basis: calc((100% - 72px) / 2)
     }
