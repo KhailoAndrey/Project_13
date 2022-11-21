@@ -6,28 +6,22 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @include retina {
     background-image: url('../images/contacts/bg_mobile_2x.jpg');
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     background-image: url('../images/contacts/bg_tablet_1x.jpg');
     padding-top: 120px;
     padding-bottom: 120px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url('../images/contacts/bg_tablet_2x.jpg');
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     background-image: url('../images/contacts/bg_desktop_1x.jpg');
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url('../images/contacts/bg_desktop_2x.jpg');
     }
   }
