@@ -1,0 +1,129 @@
+<section class="contact-us">
+  <div class="contact-us__container">
+    <h1 class="contact-us__title">Сontacts</h1>
+  </div>
+  <div class="contact-us__container-wrap">
+    <picture>
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./images/contacts/contacts_desk_1x.jpg 1x,
+          ./images/contacts/contacts_desk_2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./images/contacts/contacts_tab_1x.jpg 1x,
+          ./images/contacts/contacts_tab_2x.jpg 2x
+        "
+      />
+      <source
+        media="(max-width:767px)"
+        srcset="
+          ./images/contacts/contacts_mob_1x.jpg 1x,
+          ./images/contacts/contacts_mob_2x.jpg 2x
+        "
+      />
+      <img
+        src="./images/contacts_tab_1x.jpg"
+        alt="Headphones, keyboard, joystick"
+        loading="lazy"
+        class="contact-us__img"
+      />
+    </picture>
+  </div>
+  <div class="wrap">
+    <div class="contact-us__container">
+      <p class="contact-us__text">
+        In case of queries about order handling and/ <br />
+        or delay, drop us an email at
+      </p>
+      <a class="contact-us__email" href="mailto:info@shopforgamers.com"
+        >info@shopforgamers.com</a
+      >
+      <!-- E-mail -->
+      <div class="contact-us__wrap">
+        <div>
+          <p class="contact-us__subtitle">Email</p>
+          <a
+            class="contact-us__email contact-us__email--dark"
+            href="mailto:sfg.info@gmail.com"
+            >sfg.info@gmail.com</a
+          >
+        </div>
+        <!-- Phone -->
+        <div>
+          <p class="contact-us__subtitle-telephone">Phone number</p>
+          <ul class="contact-us__telephone">
+            <li class="contact-us__telephone-item">
+              <a class="contact-us__telephone-link" href="tel:+380936432288"
+                >+38 (093) 643 22 88</a
+              >
+            </li>
+            <li class="contact-us__telephone-item">
+              <a class="contact-us__telephone-link" href="tel:+380503454423"
+                >+38 (050) 345 44 23</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us__form-wrap">
+      <h2 class="contact-us__modal-title">Contact us</h2>
+      <form class="contact-us__form">
+        <div class="contact-us__modal-wrap">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="contact-us__form-input"
+            pattern="[A-Za-z]{1,15}"
+            title="Username should only contain lowercase and uppercase letters. e.g. Mariya"
+            placeholder=" "
+          />
+          <label for="name" class="contact-us__form-label">Name</label>
+        </div>
+        <div class="contact-us__modal-wrap">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="contact-us__form-input"
+            pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+            title="Email must follow the format, for example nick@mail.com"
+            placeholder=" "
+          />
+          <label for="email" class="contact-us__form-label">Email</label>
+        </div>
+        <label class="contact-us__form-textarea"
+          >Leave your message
+          <textarea class="contact-us__textarea" name="comment" placeholder=" ">
+          </textarea>
+        </label>
+        <button type="button" class="contact-us__btn" data-modal-open>
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="contact-us__backdrop is-hidden" data-modal>
+    <div class="contact-us__modal">
+      <button type="button" class="contact-modal__button" data-modal-close>
+        X
+        <svg width="18" height="18">
+          <use href="./images/icons.svg#icon-modal-close-btn"></use>
+        </svg>
+      </button>
+      <p class="contact-modal__button-text">
+        Thank you <br />
+        for your message! <br />
+        We will contact you soon!
+      </p>
+      <form action="./index.html">
+        <button type="submit" class="contact-button__item">ok</button>
+      </form>
+    </div>
+  </div>
+</section>
