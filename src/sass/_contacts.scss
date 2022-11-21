@@ -33,39 +33,23 @@
   padding-right: 15px;
   margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: 480px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 768px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
-}
-.contact-us__wrap {
-  @media screen and (min-width: 481px) and (max-width: 1279px) {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-  }
-}
-.contacts-us__wrap-contact {
   @include desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
+    width: 1280px;
   }
 }
 
 .contact-us__title {
   position: relative;
-  padding-left: 16px;
-  padding-right: 15px;
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 24px;
@@ -75,7 +59,7 @@
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
+  padding-left: 0px;
   padding-right: 16px;
   padding-bottom: 25px;
 
@@ -150,12 +134,22 @@
   }
 }
 
+.contacts-us__wrap-contact {
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+  }
+}
+
 .contact-us__text {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   color: $white-color;
+  margin-top: 16px;
+  margin-bottom: 19px;
   @include tablet {
     font-size: 24px;
     line-height: 1.17;
@@ -163,6 +157,14 @@
   }
   @include desktop {
     margin-top: 59px;
+  }
+}
+
+.contact-us__wrap {
+  @media screen and (min-width: 481px) and (max-width: 1279px) {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
   }
 }
 
@@ -235,25 +237,6 @@
   }
 }
 
-.contact-us__modal-title {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  color: $text-accent-color;
-  margin-bottom: 16px;
-  margin-top: 24px;
-  @include tablet {
-    margin-top: 40px;
-    margin-bottom: 48px;
-    font-size: 36px;
-    line-height: 1.17;
-  }
-  @include desktop {
-    margin-top: 57px;
-  }
-}
-
 .contact-us__form {
   display: flex;
   flex-direction: column;
@@ -265,6 +248,26 @@
     width: 591px;
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+.contact-us__modal-title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $text-accent-color;
+  margin-bottom: 16px;
+  margin-top: 24px;
+  text-transform: uppercase;
+  @include tablet {
+    margin-top: 40px;
+    margin-bottom: 48px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  @include desktop {
+    margin-top: 57px;
   }
 }
 
@@ -291,21 +294,29 @@
 .contact-us__form-label {
   font-family: 'Roboto';
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.11;
+  font-size: 16px;
+  line-height: 1.25;
   color: $white-color;
   position: absolute;
   top: 0;
   left: 0;
   transition: transform 250ms linear;
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.11;
+  }
 }
 
 .contact-us__form-textarea {
   font-family: 'Roboto';
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.11;
+  font-size: 16px;
+  line-height: 1.25;
   color: #cdcdcd;
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.11;
+  }
 }
 
 .contact-us__textarea {
