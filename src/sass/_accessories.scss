@@ -97,9 +97,10 @@ background-color: $page-bgn-color;
     position: relative;
     font-weight: 500;
     margin-top: 0;
-    padding-left: 142px;
+    padding-left: 16px;
     margin-bottom: 0;
-    font-style: 24px;
+    font-size: 24px;
+    padding-bottom: 27px;
     line-height: 1.17;
     //margin-left: auto;
     //margin-right: auto;
@@ -108,18 +109,14 @@ background-color: $page-bgn-color;
     //padding-top: 0; 
     @include tablet {
     font-size: 56px; 
+    padding-left: 142px;
     padding-bottom: 51px;   
     }
     @include desktop {
         padding-bottom: 51px;
+        padding-left: 142px;
         font-size: 56px; 
-    }
-    @include mobile {
-        padding-left: 16px;
-        //padding-right: 16px;
-        padding-bottom: 27px;
-    }
-    
+    } 
 }
 
 .accessories__list {
