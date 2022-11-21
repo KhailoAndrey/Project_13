@@ -193,7 +193,7 @@ background-color: $page-bgn-color;
     width: 100%;
     height: auto;
     display: block;
-    text-align: left;
+    //text-align: left;
     @include desktop {
         height: auto;
     }
@@ -217,7 +217,7 @@ background-color: $page-bgn-color;
     color: $white-color;   
     padding: 16px 16px;
     border: 1px solid rgba(134, 229, 67, 1);
-    //text-align: left;
+    text-align: left;
     vertical-align: top;
 }
     
