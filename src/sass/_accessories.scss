@@ -195,6 +195,12 @@ background-color: $page-bgn-color;
     border: 1px solid rgba(134, 229, 67, 1);
     text-align: left;
     vertical-align: top;
+    @include tablet {
+        width: calc((100% - 38px) / 2);
+    } 
+    @include desktop {
+        width: calc((100% - 60px) / 4);
+    }
 }
     
 
