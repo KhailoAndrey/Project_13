@@ -1,109 +1,120 @@
-<section class="banner">
-  <h2 class="banner__title">Gallery</h2>
-  <div class="banner__slider swiper-container">
-    <div class="banner__slider-wrapper swiper-wrapper">
-      <div class="banner__slider-slide swiper-slide">
-        <div class="banner__slider-image">
-          <picture>
-            <source
-              srcset="
-                ./images/banner1-desk.jpg    1x,
-                ./images/banner1-desk-2x.jpg 2x
-              "
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/banner1-tab.jpg    1x,
-                ./images/banner1-tab-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/banner-1-mob.jpg    1x,
-                ./images/banner-1-mob-2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              src="./images/banner1-desk.jpg"
-              width="1280"
-              height="498"
-              alt="banner1"
-            />
-          </picture>
+<section class="banner-container">
+  <div class="banner">
+    <h2 class="banner__title">Gallery</h2>
+    <div class="banner__slider swiper-container">
+      <div class="banner__slider-wrapper swiper-wrapper">
+        <div class="banner__slider-slide swiper-slide">
+          <div class="banner__slider-image">
+            <picture>
+              <source
+                srcset="
+                  ./images/banner/banner1.jpg    1x,
+                  ./images/banner/banner1-2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/banner/banner1-tab.jpg    1x,
+                  ./images/banner/banner1-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/banner/banner1-mob.jpg    1x,
+                  ./images/banner/banner1-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/banner/banner1.jpg"
+                width="1280"
+                height="498"
+                alt="banner1"
+              />
+            </picture>
+            <p class="banner__slider-text text1">
+              One place <span>for everything you want</span>
+            </p>
+          </div>
+        </div>
+        <div class="banner__slider-slide swiper-slide">
+          <div class="banner__slider-image">
+            <picture>
+              <source
+                srcset="
+                  ./images/banner/banner2.jpg    1x,
+                  ./images/banner/banner2-2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/banner/banner2-tab.jpg    1x,
+                  ./images/banner/banner2-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/banner/banner2-mob.jpg    1x,
+                  ./images/banner/banner2-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/banner/banner2.jpg"
+                width="1280"
+                height="498"
+                alt="banner2"
+              />
+            </picture>
+            <p class="banner__slider-text text2">
+              Best shop for buying <span>gaming products</span>
+            </p>
+          </div>
+        </div>
+        <div class="banner__slider-slide swiper-slide">
+          <div class="banner__slider-image">
+            <picture>
+              <source
+                srcset="
+                  ./images/banner/banner3.jpg    1x,
+                  ./images/banner/banner3-2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/banner/banner3-tab.jpg    1x,
+                  ./images/banner/banner3-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/banner/banner3-mob.jpg    1x,
+                  ./images/banner/banner3-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/banner/banner3.jpg "
+                width="1280"
+                height="498"
+                alt="banner3"
+              />
+            </picture>
+            <p class="banner__slider-text text3">
+              High-quality products in lowest price
+            </p>
+          </div>
         </div>
       </div>
-      <div class="banner__slider-slide swiper-slide">
-        <div class="banner__slider-image">
-          <picture>
-            <source
-              srcset="
-                ./images/banner-2-desk.jpg    1x,
-                ./images/banner-2-desk-2x.jpg 2x
-              "
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/banner2-tab.jpg    1x,
-                ./images/banner2-tab-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/banner2-mob.jpg    1x,
-                ./images/banner2-mob-2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              src="./images/banner-2-desk.jpg"
-              width="1280"
-              height="498"
-              alt="banner2"
-            />
-          </picture>
-        </div>
+      <div class="pagination">
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="banner__slider-slide swiper-slide">
-        <div class="banner__slider-image">
-          <picture>
-            <source
-              srcset="
-                ./images/banner-3-desk.jpg    1x,
-                ./images/banner-3-desk-2x.jpg 2x
-              "
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/banner3-tab.jpg    1x,
-                ./images/banner3-tab-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/banner3-mob.jpg    1x,
-                ./images/banner3-mob-2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              src="./images/banner-3-desk.jpg"
-              width="1280"
-              height="498"
-              alt="banner3"
-            />
-          </picture>
-        </div>
-      </div>
-    </div>
-    <div class="pagination">
-      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
