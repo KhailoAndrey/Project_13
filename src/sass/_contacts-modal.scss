@@ -25,16 +25,16 @@
   min-height: 395px;
   width: 408px;
   max-width: 90%;
-  background-color: #01383a;
+  background-color: $page-bgn-color;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 250ms linear, opacity 250ms linear;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     min-height: 524px;
     min-width: 688px;
     padding: 88px 25px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     min-width: 768px;
     padding: 88px 65px;
   }
@@ -68,9 +68,9 @@ button {
   font-size: 24px;
   line-height: 1.17;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
   margin-bottom: 32px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 56px;
     line-height: 1.18;
   }
@@ -91,8 +91,8 @@ button {
   height: 51px;
   padding: 16px 20px;
   margin-top: 24px;
-  color: #01383a;
-  background-color: #86e543;
+  color: $page-bgn-color;
+  background-color: $btn-color;
   border-radius: 16px;
   border: none;
   &:hover,
@@ -101,7 +101,7 @@ button {
       0px 4px 10px rgba(255, 255, 255, 0.1);
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-top: 80px;
     min-width: 306px;
     height: 70px;
