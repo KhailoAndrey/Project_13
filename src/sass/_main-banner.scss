@@ -19,6 +19,10 @@
   padding-top: 0;
   margin: 0 auto;
 
+  @include mobile {
+    width: 480px;
+  }
+
   @include tablet {
     width: 768px;
     padding-top: 120px;
@@ -92,6 +96,8 @@
 }
 
 .text1 {
+  display: flex;
+  flex-direction: column;
   background-image: $banner-one-place-gradient;
   @include desktop {
     left: 345px;
@@ -101,6 +107,7 @@
   @include tablet {
     left: 41px;
     bottom: 14px;
+    display: block;
   }
 }
 
