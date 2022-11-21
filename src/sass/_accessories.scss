@@ -31,6 +31,7 @@ background-color: $page-bgn-color;
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
+        calc((100% - 24px) / 2);  
     }
     @include tablet {
         margin-left: auto;
@@ -101,6 +102,7 @@ background-color: $page-bgn-color;
     }
     font-weight: 500;
     margin-top: 0;
+    padding-left: 142px;
     margin-bottom: 0;
     font-style: 24px;
     line-height: 1.17;
@@ -212,7 +214,7 @@ background-color: $page-bgn-color;
     transform: translateY(0);
 }
 
-.accessories__picture {
+/*.accessories__picture {
     @include mobile {
         width: 100%;
     }
@@ -222,7 +224,7 @@ background-color: $page-bgn-color;
 @include desktop {
         width: calc((100% - 60px) / 4);
     }
-}
+}*/
 
 .accessories__block{
     padding-top: 8px;
