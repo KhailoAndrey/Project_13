@@ -21,13 +21,14 @@ background-color: $page-bgn-color;
 
 .accessories__btn-list {
     width: 100%;
+    max-width: 272px;
     //height: 94px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 32px;
     justify-content: center;
     align-items: center;
-    gap: 44px;
+    gap: 24px;
     @include mobile {
         //display: flex;
         //flex-wrap: wrap;
@@ -48,6 +49,7 @@ background-color: $page-bgn-color;
     @include desktop {
         width: 801px;
         margin-bottom: 72px;
+        gap: 43px;
     }
 }
 /*.accessories__btn-list {
