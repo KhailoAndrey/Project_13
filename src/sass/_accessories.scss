@@ -31,7 +31,7 @@ background-color: $page-bgn-color;
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
-        //width: calc((100% - 24px) / 2);  
+        width: calc((100% - 72px) / 2);  
     }
     @include tablet {
         margin-left: auto;
