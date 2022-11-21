@@ -1,278 +1,241 @@
 .sale {
-    margin: 0 auto;
-    padding: 48px 0;
-   
-    background-image: 
-    url(../images/main-sale/bg-image/bg-mob@1x.png);
+  margin: 0 auto;
+  padding: 48px 0;
+
+  background-image: url(../images/main-sale/bg-image/bg-mob@1x.png);
+
+  @include retina {
+    background-image: url(../images/main-sale/bg-image/bg-mob@2x.png);
+  }
+
+  @include tablet {
+    padding: 120px 0;
+
+    background-image: url(../images/main-sale/bg-image/bg-tab@1x.png);
 
     @include retina {
-        background-image: 
-        url(../images/main-sale/bg-image/bg-mob@2x.png);
+      background-image: url(../images/main-sale/bg-image/bg-tab@2x.png);
     }
-   
+  }
 
-    @include tablet {
-       padding: 120px 0;
-
-       background-image:
-       url(../images/main-sale/bg-image/bg-tab@1x.png);
-
-       @include retina {
-        background-image:
-        url(../images/main-sale/bg-image/bg-tab@2x.png); 
-
-    }
-}
-
-@include desktop {
-    background-image: 
-    url(../images/main-sale/bg-image/bg-desk@1x.png);
+  @include desktop {
+    background-image: url(../images/main-sale/bg-image/bg-desk@1x.png);
 
     @include retina {
-        background-image:
-        url(../images/main-sale/bg-image/bg-desk@2x.png);
+      background-image: url(../images/main-sale/bg-image/bg-desk@2x.png);
     }
-}
+  }
 }
 
 .sale__container {
-    margin: 0 auto;
-    padding-left: 17px;
-    padding-right: 18px;
-    width: 320px;
-    flex: 1;
-   
+  margin: 0 auto;
+  padding-left: 17px;
+  padding-right: 18px;
+  width: 320px;
 
-    @include tablet {
-        width: 768px;
-        padding-left: 80px;
-        padding-right: 80px;
-      
-        
-    }
+  @include tablet {
+    width: 768px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 
-    @include desktop {
-        width: 1280px;
-        padding-left: 40px;
-        padding-right: 40px;
-        
-
-    }
+  @include desktop {
+    width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .sale__list {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 
+  // gap: 24px;
+  justify-content: center;
 
-// gap: 24px;
-justify-content: center;
-
-
-
-@include tablet {
- 
+  @include tablet {
     margin: -19px;
-   display: flex;
- 
-   
+    display: flex;
+
     flex-wrap: wrap;
-}
+  }
 
-@include desktop {
-   
+  @include desktop {
     margin: -10px;
-   
+  }
 }
 
+.item-2 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
+.item-4 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.item-6 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.item-8 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 
-    .item-2 {
-        @media screen and (max-width: 767px){
-            display:none;
-        }
-            
-        }
-    
-
-    .item-4 {
-        @media screen and (max-width: 767px){
-            display:none;
-        }
-            
-        } 
-    .item-6 {
-            @media screen and (max-width: 767px){
-                display:none;
-            }
-                
-            } 
-    .item-8 {
-                @media screen and (max-width: 767px){
-                    display:none;
-                }
-                    
-                } 
-          
-        
-.sale__item {
-    width: 100%;
-
-
+.item-3 {
+    @media screen and (min-width: 320px), (min-width: 480px) {
+      order: 1;
+    }
 
     @include tablet {
-        width: calc((100% - 4 * 19px) / 2);
-        margin: 19px;
-       
-
+      order: 1;
     }
+}
 
-    @include desktop {
-        width: calc((100% - 8 * 10px) / 4);
-        margin: 10px;
-    }
+.item-7 {
+  @include tablet {
+    order: 1;
+  }
+}
+.item-8 {
+  @include tablet {
+    order: 1;
+  }
+}
+.item-4 {
+  @include tablet {
+    order: 2;
+  }
+}
 
-    // &:not(:last-child) {
+.sale__item {
+  width: 100%;
 
-    //     @media screen and (max-width: 767px){
-    //         margin-bottom: 24px;
-    //     }
-    
-    //     @include tablet {
-    //         margin-bottom: 32px;
-    //     }
-    
-    //     @include desktop {
-    //         margin-bottom: 24px;
-    //     }
-       
-    // }
+  @include tablet {
+    width: calc((100% - 4 * 19px) / 2);
+    margin: 19px;
+  }
 
-    
+  @include desktop {
+    width: calc((100% - 8 * 10px) / 4);
+    margin: 10px;
+  }
 }
 
 .sale__item:nth-child(4) {
-    @media screen and (max-width: 767px){
-        margin-bottom: 24px;
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
 }
 
-.sale__item:nth-child(n+7) {
-    @include tablet {
-        margin-bottom: 32px;
-    }
+.sale__item:nth-child(n + 7) {
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
-.sale__item:nth-child(n+5) {
-    margin-bottom: 24px;
+.sale__item:nth-child(n + 5) {
+  margin-bottom: 24px;
 }
 
 .sale__title {
-    font-family: 'Roboto';
-    font-size: 24px;
-    line-height: calc(28 / 24);
-    font-weight: 600;
-    color: $nav-menu-text-color;
-    margin-bottom: 35px;
-    margin-left: 80px;
+  font-family: 'Roboto';
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  font-weight: 600;
+  color: $nav-menu-text-color;
+  margin-bottom: 35px;
+  margin-left: 80px;
 
-    @include tablet {
-        font-size: 56px;
-        line-height: calc(66 / 56);
-        margin-bottom: 51px;
-        margin-left: 142px;
-    }
+  @include tablet {
+    font-size: 56px;
+    line-height: calc(66 / 56);
+    margin-bottom: 51px;
+    margin-left: 142px;
+  }
 
-    @include desktop {
-        margin-bottom: 43px;
-        margin-left: 142px;
-    }
+  @include desktop {
+    margin-bottom: 43px;
+    margin-left: 142px;
+  }
 }
 
 .sale__link {
-    display: block;
+  display: block;
 }
 
 .sale__thumb {
-    position: relative;
-    content: '';
+  position: relative;
+  content: '';
 }
 
 .sale__img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 8px;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 8px;
 }
 
 .sale__description {
-   padding: 0 16px 20px 8px;
-
-
+  padding: 0 16px 20px 8px;
 }
 
 .sale__text {
-    font-family: 'Roboto';
-    font-size: 22px;
-    line-height: calc(26 / 22);
-    font-weight: 600;
-    color: $btn-color;
-    margin-bottom: 8px;
+  font-family: 'Roboto';
+  font-size: 22px;
+  line-height: calc(26 / 22);
+  font-weight: 600;
+  color: $btn-color;
+  margin-bottom: 8px;
 }
 
 .sale__price {
-    display: flex;
-    // gap: 80px;
-    // margin-left: auto;
-    align-items: center;
-    justify-content: space-between;
- 
-
-   
+  display: flex;
+  // gap: 80px;
+  // margin-left: auto;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .sale__oldprice {
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: calc(14 / 14);
-    font-weight: 600;
-    color: $old-price-text-color;
-    // margin-right: 80px;
-    text-decoration: line-through;
-    
- 
-    
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: calc(14 / 14);
+  font-weight: 600;
+  color: $old-price-text-color;
+  // margin-right: 80px;
+  text-decoration: line-through;
 }
 
 .sale__newprice {
-    font-family: 'Roboto';
-    font-size: 20px;
-    line-height: calc(20 / 20);
-    font-weight: 600;
-    color: $text-accent-color;
-   
-    
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: calc(20 / 20);
+  font-weight: 600;
+  color: $text-accent-color;
 }
 
 .sale__btn {
-    display: block;
-    margin: auto;
-    cursor: pointer;
-    border: none;
-    padding: 16px 48px;
-    border-radius: 16px;
-    background-color: $white-color;
-    font-family: 'Roboto';
-    font-weight: 700;
-    color: $btn-text-color;
-    font-size: 16px;
-    line-height: calc(19 / 16);
-    box-shadow: none;
-   
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  border: none;
+  padding: 16px 48px;
+  border-radius: 16px;
+  background-color: $white-color;
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: $btn-text-color;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  box-shadow: none;
 }
 .sale__btn:hover,
 .sale__btn:focus {
-    box-shadow: $btn-view-all-hover-shadow;
-
+  box-shadow: $btn-view-all-hover-shadow;
 }
