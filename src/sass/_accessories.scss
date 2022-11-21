@@ -149,7 +149,7 @@ padding-bottom: 120px;
     }
     @include tablet {
     height: 72px;
-    width: 111%;
+    width: 131%;
     left: -5.5%;
     background-image: url('../images/contacts/top_line_tablet.svg'),
         url('../images/contacts/bottom_line_tablet.svg');
@@ -157,7 +157,7 @@ padding-bottom: 120px;
     }
     @include desktop {
     height: 59px;
-    width: 107%;
+    width: 120%;
     left: -3.5%;
     background-image: url('../images/contacts/top_line_desk.svg'),
         url('../images/contacts/bottom_line_desk.svg');
