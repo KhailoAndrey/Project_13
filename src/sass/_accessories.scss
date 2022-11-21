@@ -267,14 +267,8 @@ background-color: $page-bgn-color;
 .accessories__prices {
     display: flex;
     align-items: center;
-    gap: 98px;
+    gap: 80px;
     width: 285px;
-    @include tablet{
-    gap: 116px;
-    }
-    @include desktop {
-        gap: 98px;
-    }
 }
 
 .accessories__old-price {
