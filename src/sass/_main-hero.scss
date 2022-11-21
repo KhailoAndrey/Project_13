@@ -1,0 +1,191 @@
+.section-hero {
+  max-width: 1600px;
+  background-color: #01383a;
+  background-image: url('../images/menu-hero/tab-bg-as.png'),
+    url('../images/menu-hero/Hero 1.jpg');
+  background-repeat: no-repeat;
+  background-position: left 211px top -48px, right center;
+  background-size: 50%, 150%;
+
+  @include tablet {
+    background-image: url('../images/menu-hero/tab-bg-as.png'),
+      url('../images/menu-hero/Hero 1.jpg');
+
+    background-size: 379px, cover;
+    background-position: top 33px left 389px, left center;
+  }
+
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: url(../images/menu-hero/tab-bg-as2x.png),
+        url(../images/menu-hero/Hero2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: url('../images/menu-hero/tab-bg-as.png'),
+      url('../images/menu-hero/Hero 1.jpg');
+
+    background-position: right 91px bottom 82px, center;
+    background-size: 611px 573px, 100%;
+  }
+
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: url(../images/menu-hero/tab-bg-as2x.png),
+        url(../images/menu-hero/Hero2x.jpg);
+    }
+  }
+}
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 180px;
+  padding-bottom: 127px;
+
+  @include tablet {
+    margin: 0px;
+
+    padding-bottom: 208px;
+    padding-left: 40px;
+  }
+
+  @include desktop {
+    margin: 0px;
+
+    padding-bottom: 329px;
+    padding-left: 142px;
+  }
+}
+
+.hero__title {
+  width: 247px;
+
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+
+  color: #ffffff;
+
+  @include tablet {
+    width: 388px;
+    font-size: 56px;
+    line-height: 66px;
+    text-align: left;
+    margin: 0;
+    padding-top: 120px;
+
+    color: #ffffff;
+  }
+
+  @include desktop {
+    width: 515px;
+    margin: 0;
+    padding-top: 180px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: left;
+
+    color: #ffffff;
+  }
+}
+
+.hero__btn {
+  width: 133px;
+  height: 19px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  color: #01383a;
+  width: 173px;
+  height: 51px;
+
+  background: #86e543;
+  border-radius: 16px;
+
+  width: 173px;
+  height: 51px;
+
+  background: #86e543;
+  border-radius: 16px;
+
+  color: #01383a;
+
+  &:hover {
+    background: #86e543;
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+  }
+  @include tablet {
+    display: block;
+    width: 306px;
+    height: 70px;
+
+    background: #86e543;
+    border-radius: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    color: #01383a;
+  }
+  @include desktop {
+    display: block;
+    width: 306px;
+    height: 70px;
+
+    background: #86e543;
+    border-radius: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    color: #01383a;
+  }
+}
