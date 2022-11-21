@@ -10,7 +10,7 @@
   margin: 0 auto;
   padding-right: 32px;
   padding-left: 16px;
-  max-width: 320px;
+  max-width: 480px;
   //   max-width: 320px;
   @include tablet {
     // max-width: none;
@@ -84,6 +84,11 @@
   line-height: 1;
   color: $nav-menu-text-color;
 }
+.footer__links-item:hover,
+.footer__links-item:focus {
+  border-bottom-color: $btn-border-color;
+}
+
 // .footer__social {
 // }
 .footer__social-list {
