@@ -84,6 +84,11 @@
   line-height: 1;
   color: $nav-menu-text-color;
 }
+.footer__links-item:hover,
+.footer__links-item:focus {
+  border-bottom-color: $btn-border-color;
+}
+
 // .footer__social {
 // }
 .footer__social-list {
