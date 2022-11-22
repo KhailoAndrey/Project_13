@@ -226,7 +226,7 @@ width: 100%;
     }
 }
 
-.accessories__picture:nth-child(1) {
+/*.accessories__picture:nth-child(1) {
     @include tablet {
     order: 1;
 }
@@ -266,7 +266,7 @@ width: 100%;
 }
 
 
-/*.accessories__picture:nth-child(1) {
+.accessories__picture:nth-child(1) {
     @include desktop {
     order: 1;
 }
