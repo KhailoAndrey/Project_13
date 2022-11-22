@@ -1,3 +1,9 @@
+.blog{
+   background-image: url("../images/blog/blog-bg-mobile-1x.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
 .container {
    width: 100%;
    margin: 0 auto;
@@ -20,15 +26,16 @@ ol {
    list-style: none;
 }
 
-.blog {
+.page__container {
    max-width: 1280px;
    min-height: 320px;
+   // додано через свайп min-height: 1670px;
+   min-height: 1670px+136px;
+
    margin: 0 auto;
 
-   background-image: url("../images/blog/blog-bg-mobile-1x.jpg");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
+   
+  
 
    padding-top: 40px+104px;
    padding-bottom: 48px;
@@ -38,14 +45,20 @@ ol {
    }
    @include tablet {
       background-image: url("../images/blog/blog-bg-tablet-1x.jpg");
+
+
+      // додано через свайп min-height: 2000px;
+      min-height: 2000px+136px;
       padding-top: 120px+136px;
+
       padding-bottom: 120px;
       @include retina {
          background-image: url("../images/blog/blog-bg-tablet-2x.jpg");
       }
    }
    @include desktop {
-      min-height: 600px;
+   // було до свайпа min-height: 600px;
+      min-height: 1600px+136px;
       background-image: url("../images/blog/blog-bg-destop-1x.jpg");
       @include retina {
          background-image: url("../images/blog/blog-bg-destop-2x.jpg");
@@ -302,3 +315,66 @@ ol {
       line-height: 1;
    }
 }
+// swiper-----------
+
+ 
+ .sim-slider {
+   // max-width: 1000px;
+   // min-width: 320px;
+   // margin: 20px auto;
+   // padding: 30px 50px;
+   
+ }
+ 
+ /* General styles */
+ .sim-slider {
+   position: relative;
+ }
+ 
+ .sim-slider-list {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   position: relative;
+ }
+ 
+ .sim-slider-element {
+   width: 100%;
+   transition: opacity 1s ease-in;
+   opacity: 0;
+   position: absolute;
+   z-index: 2;
+   left: 0;
+   top: 10px;
+   display: block;
+ }
+ 
+ /* Navigation item styles */
+ 
+ 
+ div.sim-slider-dots {
+   width: 100%;
+   height: auto;
+   position: absolute;
+   left: 0;
+   top: 1520px;
+   z-index: 3;
+   text-align: center;
+   @include tablet{
+      top: 1650px;
+   }
+   @include desktop{
+      top: 1200px;
+   }
+ }
+ 
+ span.sim-dot {
+   width: 10px;
+   height: 10px;
+   margin: -15px 15px;
+   padding: 10px;
+   display: inline-block;
+   background-color: #BBB;
+   border-radius: 50%;
+   cursor: pointer;
+ }
