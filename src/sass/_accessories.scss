@@ -317,6 +317,110 @@ width: 100%;
 }
 } */
 
+.accesories__list {
+    padding: 0;
+    //display: flex;
+    flex-direction: column;
+    //align-items: center;
+    @media screen and (max-width: 767px) {
+        &-picture:nth-child(even) {
+            display: none;
+        }
+    }
+    @include tablet {
+        display: flex;
+        &-picture:nth-child(1) {
+            order: 1;
+        }
+        &-picture:nth-child(2) {
+            order: 2;
+        }
+        &-picture:nth-child(3) {
+            order: 5;
+        }
+        &-picture:nth-child(4) {
+            order: 6;
+        }
+        &-picture:nth-child(5) {
+            order: 9;
+        }
+        &-picture:nth-child(6) {
+            order: 10;
+        }
+        &-picture:nth-child(7) {
+            order: 13;
+        }
+        &-picture:nth-child(8) {
+            order: 14;
+        }
+        &-picture:nth-child(9) {
+            order: 3;
+        }
+        &-picture:nth-child(10) {
+            order: 4;
+        }
+        &-picture:nth-child(11) {
+            order: 7;
+        }
+        &-picture:nth-child(12) {
+            order: 8;
+        }
+    }
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        //gap: 20px;
+        &-picture:nth-child(1) {
+            order: 1;
+        }
+        &-picture:nth-child(2) {
+            order: 2;
+        }
+        &-picture:nth-child(3) {
+            order: 3;
+        }
+        &-picture:nth-child(4) {
+            order: 4;
+        }
+        &-picture:nth-child(5) {
+            order: 5;
+        }
+        &-picture:nth-child(6) {
+            order: 6;
+        }
+        &-picture:nth-child(7) {
+            order: 7;
+        }
+        &-picture:nth-child(8) {
+            order: 8;
+        }
+    &-picture:nth-child(9) {
+        order: 9;
+    }
+    &-picture:nth-child(10) {
+        order: 10;
+    }
+    &-picture:nth-child(11) {
+        order: 11;
+    }
+    &-picture:nth-child(12) {
+        order: 12;
+    }
+    &-picture:nth-child(13) {
+        order: 13;
+    }
+    &-picture:nth-child(14) {
+        order: 14;
+    }
+    &-picture:nth-child(15) {
+        order: 15;
+    }
+    &-picture:nth-child(16) {
+        order: 16;
+    }
+    }
+}
+
 .accessories__pic {
     border-radius: 12px;
     //box-shadow: #86E543;
