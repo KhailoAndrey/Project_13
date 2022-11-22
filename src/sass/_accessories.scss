@@ -567,8 +567,73 @@
   //   opacity: 1;
   display: block;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .bullet1 {
   width: 40px;
+}
+
+.pagination:hover > .bullet1 {
+  animation-name: bullet1;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  padding-bottom: 10px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bullet1 {
+  0% {
+    width: 40px;
+  }
+
+  50% {
+    width: 16px;
+  }
+
+  100% {
+    width: 16px;
+  }
+}
+
+.pagination:hover > .bullet2 {
+  animation-name: bullet2;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bullet2 {
+  0% {
+    width: 16px;
+  }
+
+  50% {
+    width: 40px;
+  }
+
+  100% {
+    width: 16px;
+  }
+}
+
+.pagination:hover > .bullet3 {
+  animation-name: bullet3;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bullet3 {
+  0% {
+    width: 16px;
+  }
+
+  50% {
+    width: 16px;
+  }
+
+  100% {
+    width: 40px;
+  }
 }
