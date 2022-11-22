@@ -81,7 +81,7 @@
   position: absolute;
   content: '';
   @media screen and (max-width: 767px) {
-    width: 150%;
+    // width: 150%;
     left: -3%;
     background-image: url('../images/contacts/top_line_mob.svg'),
       url('../images/contacts/bottom_line_mob.svg');
