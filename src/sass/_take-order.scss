@@ -295,9 +295,9 @@ html {
 
 .order-form__parts {
   display: flex;
-  justify-content: center;
+ 
   flex-direction: column;
-  width: 100%;
+ 
   align-items: baseline;
 
   @media screen and (min-width: 1280px) {
@@ -306,11 +306,23 @@ html {
   }
 }
 .order-form__left {
-  margin-right: 20px;
-  width: 100%;
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    margin-bottom: 48px;
+    margin-right: 20px;
+  }
+  
+  @media screen and (max-width: 1280px) {
+    width: 100%;
+  }
+
 }
-.order-form__right {
-  width: 100%;
+.order-form__right{
+  @media screen and (max-width: 1280px) {
+    width: 100%;
+  }
+
 }
 .order-form__title {
   font-family: 'Roboto';
@@ -403,9 +415,10 @@ html {
   }
   @media screen and (min-width: 768px) {
     height: 256px;
+    width: 100%;
   }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 0;
+ width: 589px;
   }
 }
 .order-area__label {
