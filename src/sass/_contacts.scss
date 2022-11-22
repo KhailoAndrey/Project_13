@@ -1,7 +1,7 @@
 .contact-us {
   background: $page-bgn-color;
   background-image: url('../images/contacts/bg_mobile_1x.jpg');
-  padding-top: 40px;
+  padding-top: 40px+104px;
   padding-bottom: 48px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
   @include tablet {
     background-image: url('../images/contacts/bg_tablet_1x.jpg');
-    padding-top: 120px;
+    padding-top: 120px+136px;
     padding-bottom: 120px;
     @include retina {
       background-image: url('../images/contacts/bg_tablet_2x.jpg');
@@ -81,7 +81,7 @@
   position: absolute;
   content: '';
   @media screen and (max-width: 767px) {
-    width: 107%;
+    // width: 150%;
     left: -3%;
     background-image: url('../images/contacts/top_line_mob.svg'),
       url('../images/contacts/bottom_line_mob.svg');
@@ -109,7 +109,7 @@
 }
 
 .contact-us__img {
-  @media screen and (min-width: 480px) {
+  @include mobile {
     margin-bottom: 16px;
     width: 100%;
   }
@@ -139,6 +139,8 @@
     display: flex;
     flex-direction: row;
     justify-content: baseline;
+    max-width: 1280px;
+    margin: auto;
   }
 }
 
@@ -281,7 +283,7 @@
   border: none;
   background-color: transparent;
   outline: transparent;
-  border-bottom: 1px solid #86e543;
+  border-bottom: 1px solid $btn-border-color;
   margin-bottom: 40px;
   color: $white-color;
   padding: 10px;

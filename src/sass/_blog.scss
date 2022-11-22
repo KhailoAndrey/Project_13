@@ -30,7 +30,7 @@ ol {
    background-position: center;
    background-size: cover;
 
-   padding-top: 40px;
+   padding-top: 40px+104px;
    padding-bottom: 48px;
 
    @include retina {
@@ -38,7 +38,7 @@ ol {
    }
    @include tablet {
       background-image: url("../images/blog/blog-bg-tablet-1x.jpg");
-      padding-top: 120px;
+      padding-top: 120px+136px;
       padding-bottom: 120px;
       @include retina {
          background-image: url("../images/blog/blog-bg-tablet-2x.jpg");

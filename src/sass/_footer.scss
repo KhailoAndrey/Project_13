@@ -86,7 +86,12 @@
 }
 .footer__links-item:hover,
 .footer__links-item:focus {
-  border-bottom-color: $btn-border-color;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 0px 8px;
+  gap: 10px;
+  border-bottom: 1px solid $btn-border-color;
 }
 
 // .footer__social {
