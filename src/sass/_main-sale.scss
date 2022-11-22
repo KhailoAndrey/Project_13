@@ -205,7 +205,7 @@
   font-weight: 600;
   color: $white-color;
   margin-bottom: 35px;
-  margin-left: 40px;
+  margin-left: 0px;
 
   @include tablet {
     font-size: 56px;
@@ -319,12 +319,12 @@
       url('../images/blog-article/bottom-line.svg');
   }
   @media screen and (min-width: 768px) {
-    height: 82px;
+    height: 71px;
     width: 111%;
-    left: -0.05%;
+    left: -1.5%;
     background-image: url('../images/blog-article/top-line-tablet.svg'),
       url('../images/blog-article/bottom-line-tablet.svg');
-    background-position-y: 50%, 200%;
+    background-position-y: 40%, 30%;
   
    
   }
