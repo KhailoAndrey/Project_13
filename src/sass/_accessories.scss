@@ -264,11 +264,10 @@ width: 100%;
     order: 8;
 }
 }
-@include desktop {
-    display: flex;
-    flex-wrap: wrap;
 
-.accessories__picture:nth-child(1) {
+
+/*.accessories__picture:nth-child(1) {
+    @include desktop {
     order: 1;
 }
 .accessories__picture:nth-child(2) {
@@ -316,7 +315,7 @@ width: 100%;
 .accessories__picture:nth-child(16) {
     order: 16;
 }
-}
+} */
 
 .accessories__pic {
     border-radius: 12px;
