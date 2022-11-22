@@ -1,10 +1,10 @@
 .article {
   @media screen and (min-width: 768px) {
-    padding-top: 112px;
+    padding-top: 112px+136px;
     padding-bottom: 120px;
   }
   background-color: $page-bgn-color;
-  padding-top: 40px;
+  padding-top: 40px+104px;
   padding-bottom: 48px;
   color: $white-color;
   font-size: 16px;

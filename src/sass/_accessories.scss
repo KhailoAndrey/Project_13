@@ -1,5 +1,5 @@
 .accessories {
-padding-top: 48px;
+padding-top: 48px+104px;
 padding-bottom: 48px; 
 background-color: $page-bgn-color;
 background-image: url(../images/take-order-img/bgi1x.jpg);
@@ -33,13 +33,14 @@ width: 100%;
     }
 }
 @include tablet {
-    padding-top: 120px;
+    padding-top: 120px+136px;
     padding-bottom: 120px;   
 }  
-@include desktop {
-    padding-top: 120px;
-padding-bottom: 120px; 
-}
+// Ниже лишнее свойство
+// @include desktop {
+//     padding-top: 120px;
+//     padding-bottom: 120px; 
+// }
 }
 
 .container-accessories {
