@@ -205,7 +205,7 @@
   font-weight: 600;
   color: $white-color;
   margin-bottom: 35px;
-  margin-left: 80px;
+  margin-left: 40px;
 
   @include tablet {
     font-size: 56px;
@@ -309,30 +309,32 @@
 .sale__line {
   position: absolute;
   content: '';
+  margin-top: 20px;
  
   @media screen and (max-width: 767px) {
-    height: 19px;
+    height: 39px;
     width: 100%;
     left: 0;
     background-image: url('../images/blog-article/top-line.svg'),
       url('../images/blog-article/bottom-line.svg');
   }
   @media screen and (min-width: 768px) {
-    height: 72px;
+    height: 82px;
     width: 111%;
-    left: -5.5%;
+    left: -0.05%;
     background-image: url('../images/blog-article/top-line-tablet.svg'),
       url('../images/blog-article/bottom-line-tablet.svg');
     background-position-y: 50%, 200%;
+  
    
   }
   @media screen and (min-width: 1280px) {
     height: 59px;
-    width: 107%;
+    width: 103%;
     left: -3.5%;
     background-image: url('../images/blog-article/top-line-dt.svg'),
       url('../images/blog-article/bottom-line-dt.svg');
-    background-position-y: 45%, -30%;
+    background-position-y: 25%, -20%;
   }
   background-repeat: no-repeat, no-repeat;
   background-position-x: left;
