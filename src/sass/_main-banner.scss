@@ -20,7 +20,7 @@
   margin: 0 auto;
 
   @include mobile {
-    width: 480px;
+    width: 320px;
   }
 
   @include tablet {
@@ -131,4 +131,8 @@
 
 .text2 > span {
   text-transform: uppercase;
+}
+
+.img {
+  height: 100%;
 }
