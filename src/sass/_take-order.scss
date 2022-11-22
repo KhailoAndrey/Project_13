@@ -125,7 +125,7 @@ html {
       left: -5.5%;
       background-image: url('../images/take-order-img/line-top-tablet.svg'),
         url('../images/take-order-img/line-bot-tablet.svg');
-      background-position-y: 50%, 200%;
+      background-position-y: 50%, 500%;
     }
     @media screen and (min-width: 1280px) {
       height: 59px;
@@ -141,9 +141,20 @@ html {
 
     background-size: 100%;
   }
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 288px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 688px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 1200px;
+    }
+  }
 }
-
-
 
 .section-product {
   display: block;
@@ -165,7 +176,7 @@ html {
   font-weight: 600;
   font-size: 32px;
   line-height: 1.18;
-  color:$btn-view-all-color;
+  color: $btn-view-all-color;
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     font-size: 56px;
@@ -214,8 +225,7 @@ html {
   }
 }
 
-
-.product-price-other{
+.product-price-other {
   display: flex;
   margin-bottom: 16px;
 
@@ -231,9 +241,6 @@ html {
     align-items: center;
   }
 }
-
-
-
 
 .product-price--crossed {
   margin: 0;
@@ -280,24 +287,28 @@ html {
 }
 
 .order-form {
+  max-width: 288;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   gap: 40px;
   @media screen and (min-width: 768px) {
     padding-left: 49px;
     padding-right: 49px;
+    max-width: 590px;
   }
   @media screen and (min-width: 1280px) {
     padding-left: 0;
     padding-right: 0;
+    max-width: 1200px;
   }
 }
 
-
 .order-form__parts {
   display: flex;
- 
+
   flex-direction: column;
- 
+
   align-items: baseline;
 
   @media screen and (min-width: 1280px) {
@@ -306,23 +317,20 @@ html {
   }
 }
 .order-form__left {
-
   @media screen and (min-width: 1280px) {
     flex-direction: row;
     margin-bottom: 48px;
     margin-right: 20px;
   }
-  
+
   @media screen and (max-width: 1280px) {
     width: 100%;
   }
-
 }
-.order-form__right{
+.order-form__right {
   @media screen and (max-width: 1280px) {
     width: 100%;
   }
-
 }
 .order-form__title {
   font-family: 'Roboto';
@@ -351,7 +359,7 @@ html {
   color: ffffff;
   margin-top: 4px;
   &:focus {
-    border-color:$logo-text-color;
+    border-color: $logo-text-color;
     color: $text-accent-color;
     background-color: transparent;
   }
@@ -374,7 +382,7 @@ html {
   font-size: 16px;
   line-height: 1.25;
   text-transform: capitalize;
-  color:$logo-text-color;
+  color: $logo-text-color;
   transition: transform 250ms linear;
   margin-bottom: 4px;
   @media screen and (min-width: 768px) {
@@ -382,7 +390,6 @@ html {
     line-height: 1.11;
   }
 }
-
 
 .order-select-wrap {
   position: relative;
@@ -404,21 +411,21 @@ html {
   margin-bottom: 24px;
   &:focus {
     border-color: $text-accent-color;
-    color:$logo-text-color;
+    color: $logo-text-color;
   }
   &::placeholder {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
 
-    color:$logo-text-color;
+    color: $logo-text-color;
   }
   @media screen and (min-width: 768px) {
     height: 256px;
     width: 100%;
   }
   @media screen and (min-width: 1280px) {
- width: 589px;
+    width: 589px;
   }
 }
 .order-area__label {
@@ -429,7 +436,7 @@ html {
   font-size: 16px;
   line-height: 1.25;
   text-transform: capitalize;
-  color:$logo-text-color;
+  color: $logo-text-color;
   margin-bottom: 4px;
 
   @media screen and (min-width: 768px) {
@@ -469,7 +476,7 @@ html {
   justify-content: center;
   background: transparent;
   border: 1px solid $form-decor-color;
-  color:$form-decor-color;
+  color: $form-decor-color;
 
   border-radius: 16px;
   @media screen and (min-width: 768px) {
@@ -486,7 +493,7 @@ html {
   }
 }
 
-.order-form__btn--buy{
+.order-form__btn--buy {
   background: $form-decor-color;
   color: #01383a;
   &:focus,
