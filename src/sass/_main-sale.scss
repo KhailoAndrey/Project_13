@@ -303,6 +303,9 @@
   box-shadow: $btn-view-all-hover-shadow;
 }
 }
+.line {
+  position: relative;
+}
 .sale__line {
   position: absolute;
   content: '';
@@ -321,6 +324,7 @@
     background-image: url('../images/blog-article/top-line-tablet.svg'),
       url('../images/blog-article/bottom-line-tablet.svg');
     background-position-y: 50%, 200%;
+   
   }
   @media screen and (min-width: 1280px) {
     height: 59px;
