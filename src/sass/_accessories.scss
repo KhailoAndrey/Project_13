@@ -264,6 +264,59 @@ width: 100%;
     order: 8;
 }
 }
+@include desktop {
+    display: flex;
+    flex-wrap: wrap;
+
+.accessories__picture:nth-child(1) {
+    order: 1;
+}
+.accessories__picture:nth-child(2) {
+    order: 2;
+}
+.accessories__picture:nth-child(3) {
+    order: 3;
+}
+.accessories__picture:nth-child(4) {
+    order: 4;
+}
+.accessories__picture:nth-child(5) {
+    order: 5;
+}
+.accessories__picture:nth-child(6) {
+    order: 6;
+}
+.accessories__picture:nth-child(7) {
+    order: 7;
+}
+.accessories__picture:nth-child(8) {
+    order: 8;
+}
+.accessories__picture:nth-child(9) {
+    order: 9;
+}
+.accessories__picture:nth-child(10) {
+    order: 10;
+}
+.accessories__picture:nth-child(11) {
+    order: 11;
+}
+.accessories__picture:nth-child(12) {
+    order: 12;
+}
+.accessories__picture:nth-child(13) {
+    order: 13;
+}
+.accessories__picture:nth-child(14) {
+    order: 14;
+}
+.accessories__picture:nth-child(15) {
+    order: 15;
+}
+.accessories__picture:nth-child(16) {
+    order: 16;
+}
+}
 
 .accessories__pic {
     border-radius: 12px;
