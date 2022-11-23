@@ -199,14 +199,12 @@
   }
   @include desktop {
     background-image: url(../images/hero/fon-desk.jpg);
-    // padding-top: 136px;
   }
 }
 
 .hero__container {
   margin: 0 auto;
   padding: 0 17px;
-  // padding-bottom: 127px;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -214,7 +212,6 @@
   background-image: url(../images/hero/mob-hero@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: auto; */
   justify-content: flex-end;
   align-items: center;
   @include tablet {
@@ -254,7 +251,7 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
-  color: #ffffff;
+  color: $white-color;
   @include tablet {
     font-size: 56px;
     line-height: 66px;
@@ -273,7 +270,7 @@
   padding: 15px 15px;
   width: 173px;
   height: 51px;
-  background: #86e543;
+  background: $btn-color;
   border-radius: 16px;
   border: none;
   @include tablet {
@@ -297,10 +294,9 @@
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #01383a;
+  color: $btn-text-color;
   @include tablet {
     font-size: 32px;
     line-height: 38px;
-    // text-align: right;
   }
 }
