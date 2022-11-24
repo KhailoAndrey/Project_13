@@ -89,6 +89,7 @@
     line-height: 28px;
     background-clip: text;
     color: transparent;
+    text-align: left;
 
     @include tablet {
       font-size: 56px;
@@ -110,6 +111,7 @@
   display: flex;
   flex-direction: column;
   background-image: $banner-one-place-gradient;
+
   @include desktop {
     left: 345px;
     bottom: 49px;
