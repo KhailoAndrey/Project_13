@@ -201,7 +201,9 @@
     background-image: url(../images/hero/fon-desk.jpg);
   }
 }
-
+.hero__title {
+  visibility: hidden;
+}
 .hero__container {
   margin: 0 auto;
   padding: 0 17px;
