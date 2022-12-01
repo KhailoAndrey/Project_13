@@ -28,33 +28,23 @@
     position: relative;
     width: 320px;
     margin: 0 auto;
-    // background-image: url(../images/hero/mob-hero@1x.jpg);
+    background-image: url(../images/hero/bg-hero.png),
+      url(../images/hero/fon-hero.png);
     background-repeat: no-repeat;
     background-position: -420px 5px;
     background-size: 270%;
-
-    background-image: url(../images/hero/bg-hero.png),
-      url(../images/hero/fon-hero.png);
 
     @include retina {
       background-image: url(../images/hero/bg-hero-2x.png),
         url(../images/hero/fon-hero-2x.png);
     }
 
-    // @include retina {
-    //   background-image: url(../images/hero/fon.jpg);
-    // }
-
     @include tablet {
       width: 768px;
       background-size: 130% 87%;
-      background-position: -180px 75px;
-
-      // background-image: url(../images/hero/tab-hero@1x.jpg);
-
-      // @include retina {
-      //   background-image: url(../images/hero/fon.jpg);
-      // }
+      background-position: -180px 70px;
+      // background-position: -320px 70px;
+      // background-size: 150%;
     }
 
     @include desktop {
@@ -81,6 +71,44 @@
 
   &__wrapper {
     position: absolute;
+    width: 100%;
+    height: 472px;
+    top: 104px;
+    right: 0;
+    background-image: url(../images/hero/headphones-mob.png),
+      url(../images/hero/keyboard-mob.png), url(../images/hero/mouse-mob.png);
+    background-size: 181px 235px, 99px 75px, 101px 117px;
+    background-repeat: no-repeat;
+    background-position: top -48px right 0px, bottom 0px right 74px,
+      top 58px left 16px;
+    mix-blend-mode: luminosity;
+    animation: hero-mob 10s linear infinite;
+
+    @include retina {
+      background-image: url(../images/hero/headphones-mob-2x.png),
+        url(../images/hero/keyboard-mob-2x.png),
+        url(../images/hero/mouse-mob-2x.png);
+    }
+
+    @include tablet {
+      width: 379px;
+      height: 616px;
+      top: 169px;
+      right: 0;
+      background-image: url(../images/hero/headphones-tab.png),
+        url(../images/hero/keyboard-tab.png), url(../images/hero/mouse-tab.png);
+      background-size: 219px 256px, 159px 117px, 173px 193px;
+      background-repeat: no-repeat;
+      background-position: top 183px right 19px, bottom 63px right 189px,
+        top 10px left 41px;
+      animation: hero-tab 5s linear infinite;
+
+      @include retina {
+        background-image: url(../images/hero/headphones-tab-2x.png),
+          url(../images/hero/keyboard-tab-2x.png),
+          url(../images/hero/mouse-tab-2x.png);
+      }
+    }
 
     @include desktop {
       width: 668px;
@@ -93,8 +121,7 @@
       background-repeat: no-repeat;
       background-position: top 154px right 13px, bottom 10px left 44px,
         top 69px left 54px;
-      mix-blend-mode: luminosity;
-      animation: hero 10s linear infinite;
+      animation: hero 5s linear infinite;
 
       @include retina {
         background-image: url(../images/hero/headphones-2x.png),
@@ -181,43 +208,137 @@
       top 69px left 54px;
   }
   10% {
-    background-position: top 160px right 35px, bottom 40px left 65px,
-      top 90px left 75px;
+    background-position: top 165px right 13px, bottom 20px left 35px,
+      top 80px left 65px;
   }
   20% {
-    background-position: top 165px right 25px, bottom 60px left 75px,
-      top 100px left 55px;
-  }
-  30% {
-    background-position: top 170px right 35px, bottom 70px left 85px,
-      top 85px left 75px;
-  }
-  40% {
-    background-position: top 175px right 25px, bottom 60px left 95px,
-      top 95px left 80px;
-  }
-  50% {
-    background-position: top 180px right 35px, bottom 80px left 105px,
-      top 105px left 90px;
-  }
-  60% {
-    background-position: top 175px right 25px, bottom 100px left 95px,
-      top 95px left 80px;
-  }
-  70% {
-    background-position: top 170px right 35px, bottom 80px left 85px,
-      top 85px left 75px;
-  }
-  80% {
-    background-position: top 165px right 25px, bottom 60px left 75px,
-      top 100px left 55px;
-  }
-  90% {
-    background-position: top 160px right 35px, bottom 40px left 65px,
+    background-position: top 175px right 13px, bottom 30px left 25px,
       top 90px left 75px;
   }
+  30% {
+    background-position: top 185px right 13px, bottom 40px left 15px,
+      top 100px left 85px;
+  }
+  40% {
+    background-position: top 175px right 25px, bottom 50px left 5px,
+      top 90px left 85px;
+  }
+  50% {
+    background-position: top 175px right 35px, bottom 60px left 15px,
+      top 80px left 75px;
+  }
+  60% {
+    background-position: top 175px right 45px, bottom 50px left 25px,
+      top 70px left 65px;
+  }
+  70% {
+    background-position: top 165px right 35px, bottom 40px left 35px,
+      top 60px left 55px;
+  }
+  80% {
+    background-position: top 155px right 25px, bottom 30px left 45px,
+      top 50px left 55px;
+  }
+  90% {
+    background-position: top 145px right 15px, bottom 20px left 65px,
+      top 60px left 75px;
+  }
   100% {
-    background-position: top 165px right 25px, bottom 20px left 55px,
-      top 80px left 55px;
+    background-position: top 155px right 15px, bottom 10px left 45px,
+      top 70px left 55px;
+  }
+}
+
+@keyframes hero-tab {
+  0% {
+    background-position: top 183px right 39px, bottom 63px right 189px,
+      top 10px left 41px;
+  }
+  100% {
+    background-position: top 193px right 0px, bottom 73px right 179px,
+      top 20px left 31px;
+  }
+  20% {
+    background-position: top 183px right 39px, bottom 83px right 169px,
+      top 30px left 21px;
+  }
+  30% {
+    background-position: top 193px right 0px, bottom 93px right 159px,
+      top 40px left 11px;
+  }
+  40% {
+    background-position: top 183px right 39px, bottom 103px right 149px,
+      top 50px left 1px;
+  }
+  50% {
+    background-position: top 193px right 0px, bottom 113px right 139px,
+      top 60px left -9px;
+  }
+  60% {
+    background-position: top 183px right 39px, bottom 103px right 149px,
+      top 50px left 1px;
+  }
+  70% {
+    background-position: top 193px right 0px, bottom 93px right 159px,
+      top 40px left 11px;
+  }
+  80% {
+    background-position: top 183px right 39px, bottom 83px right 169px,
+      top 30px left 21px;
+  }
+  90% {
+    background-position: top 193px right 0px, bottom 73px right 179px,
+      top 20px left 31px;
+  }
+  100% {
+    background-position: top 180px right 29px, bottom 63px right 189px,
+      top 10px left 41px;
+  }
+}
+
+@keyframes hero-mob {
+  0% {
+    background-position: top -48px right 0px, bottom 0px right 74px,
+      top 58px left 16px;
+  }
+  100% {
+    background-position: top -38px right -10px, bottom 10px right 104px,
+      top 48px left 26px;
+  }
+  20% {
+    background-position: top -28px right -10px, bottom 0px right 74px,
+      top 38px left 36px;
+  }
+  30% {
+    background-position: top -18px right -20px, bottom 10px right 104px,
+      top 28px left 46px;
+  }
+  40% {
+    background-position: top -8px right -20px, bottom 0px right 74px,
+      top 18px left 56px;
+  }
+  50% {
+    background-position: top 0px right -20px, bottom 10px right 104px,
+      top 8px left 66px;
+  }
+  60% {
+    background-position: top -8px right -10px, bottom 0px right 74px,
+      top 18px left 56px;
+  }
+  70% {
+    background-position: top -18px right -10px, bottom 10px right 104px,
+      top 28px left 46px;
+  }
+  80% {
+    background-position: top -28px right -10px, bottom 0px right 74px,
+      top 38px left 36px;
+  }
+  90% {
+    background-position: top -38px right 0px, bottom 10px right 104px,
+      top 48px left 26px;
+  }
+  100% {
+    background-position: top -48px right 0px, bottom 5px right 84px,
+      top 58px left 16px;
   }
 }
