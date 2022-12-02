@@ -82,7 +82,7 @@
     background-position: top -48px right 0px, bottom 0px right 74px,
       top 58px left 16px;
     mix-blend-mode: luminosity;
-    animation: hero-mob 10s linear infinite;
+    animation: hero-mob 10s linear infinite alternate;
 
     @include retina {
       background-image: url(../images/hero/headphones-mob-2x.png),
@@ -101,7 +101,7 @@
       background-repeat: no-repeat;
       background-position: top 183px right 19px, bottom 63px right 189px,
         top 10px left 41px;
-      animation: hero-tab 5s linear infinite;
+      animation: hero-tab 5s linear infinite alternate;
 
       @include retina {
         background-image: url(../images/hero/headphones-tab-2x.png),
@@ -121,7 +121,7 @@
       background-repeat: no-repeat;
       background-position: top 154px right 13px, bottom 10px left 44px,
         top 69px left 54px;
-      animation: hero 5s linear infinite;
+      animation: hero 5s linear infinite alternate;
 
       @include retina {
         background-image: url(../images/hero/headphones-2x.png),
@@ -131,7 +131,7 @@
   }
 
   &__wrapper:hover {
-    animation-duration: 0s;
+    animation-play-state: paused;
   }
 
   &__title {
